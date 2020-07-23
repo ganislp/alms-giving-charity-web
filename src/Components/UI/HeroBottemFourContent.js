@@ -5,6 +5,7 @@ export const useStyles = makeStyles(theme => ({
   },
   paper: {
     width: "100%",
+    height: "47em",
     backgroundColor:"rgba(255,255,255, 0.8)"
   },
   background: {
@@ -12,10 +13,8 @@ export const useStyles = makeStyles(theme => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "50em",
+    height: "47em",
     width: "100%",
-    marginBottom:"10em",
-    
   },
   rightIconContainer: {
     padding: "1em",
