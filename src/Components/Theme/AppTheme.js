@@ -93,7 +93,8 @@ typography:{
 
  footerTextColor:{
   color: footerTextColour,
- }
+ },
+
 
 },
 overrides: {    

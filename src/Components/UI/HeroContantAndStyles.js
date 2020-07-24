@@ -18,6 +18,15 @@ export const  HeroTopButtonText = [
 ];
 
 export const heroTopStyles = makeStyles(theme => ({
+
+  mainContainer:{
+    marginLeft:  "15%",
+    [theme.breakpoints.down("md")]: {
+      marginLeft:  "0em",
+    }
+     
+     },
+
   imageContaner:{
     backgroundPosition: "center",
     backgroundSize: "cover",
@@ -76,7 +85,8 @@ export const heroTopStyles = makeStyles(theme => ({
    h4Contaner:{
     marginBottom:"0.5em",
     [theme.breakpoints.down("md")]: {
-      fontSize:"2rem"
+      fontSize:"2rem",
+
     },
     [theme.breakpoints.down("sm")]: {
      marginBottom:"2em"
@@ -86,22 +96,46 @@ export const heroTopStyles = makeStyles(theme => ({
    bodyContainer:{
     maxWidth:"40em",
     marginBottom:"2em",
-    
+    fontSize:"1rem",
     [theme.breakpoints.down("md")]: {
       maxWidth:"25em",
-      fontSize:"1.2rem",
       paddingLeft:"1em",
       paddingRight:"1em",
       textAlign:"center"
     }
    },
- mainContainer:{
-  // marginLeft:  "20em",
-   [theme.breakpoints.down("md")]: {
-     marginLeft:  "0em",
-   }
-    
-    }
+
+    rightIconContainer: {
+      padding: "1em",
+    backgroundColor: theme.palette.common.blue,
+    color:theme.palette.common.white,
+      marginLeft:"-10em",
+      [theme.breakpoints.down("md")]: {
+        padding: "0.5em",
+        marginLeft:"-3em",
+      }
+    },
+  
+   leftIconContainer: {
+      padding: "1em",
+      backgroundColor: theme.palette.common.blue,
+      color:theme.palette.common.white,
+      marginRight:"-10em",
+      [theme.breakpoints.down("md")]: {
+        padding: "0.5em",
+        marginRight:"-3em",
+      }
+    },
+    slideItemContainer:{
+      width:"100%"
+     },
+     root: {
+      flexGrow: 1
+    },
+    paper: {
+      width: "100%",
+      backgroundColor:"rgba(0,0,0, 0.5)"
+    },
 
   }));
 

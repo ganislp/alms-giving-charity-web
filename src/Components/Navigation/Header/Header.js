@@ -3,8 +3,10 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useTheme from '@material-ui/core/styles/useTheme';
 import Appbar from './AppBar/Appbar';
-// import routes from '../../UI/RoutesConst';
 import HeroPage from '../../Hero/HeroPage'
+import { Grid } from '@material-ui/core';
+
+
 
 export default function Header(){
 const [value, setValue] = useState(0);
@@ -16,11 +18,13 @@ const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
 
   return(
     <BrowserRouter>
-    <Appbar 
+
+      <Appbar 
     value={value}  
     setValue={setValue} 
     matchessmd={matchesSMD}
     />
+
     
     {/* <Switch>
     {routes.map(route => (
@@ -29,6 +33,7 @@ const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
        </Route>
     ))}
     </Switch> */}
+ 
     <Switch>
     <Route exact path="/" render={props => (<HeroPage {...props} 
     matchessmd={matchesSMD} matchesMdd={matchesMD}/>
@@ -39,6 +44,9 @@ const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
     <Route exact path="/news" component={() => <div>News</div>}></Route>
     <Route exact path="/contact" component={() => <div>Contact</div>}></Route>
     </Switch>
+
     </BrowserRouter>
+  
+    
   )
 }

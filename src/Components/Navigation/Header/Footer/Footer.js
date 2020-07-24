@@ -44,12 +44,12 @@ return(
         </Typography>
         <Grid item container direction="column" >
         {footerStylesAndContent.FooterLatestNewsLinks.links.map((link,index) => (
-            <Grid item className={classes.gridItemSpcing}>
+            <Grid item className={classes.gridItemSpcing} key={`${link.title} ${index}`}>
             <Typography variant="subtitle1"
              className={classes.subtitle1Contaner} > 
             { link.title}
              </Typography>
-             <Typography variant="caption"
+             <Typography variant="subtitle2"
              className={classes.subtitle2Contaner} > 
              { link.subTitle}
              </Typography>

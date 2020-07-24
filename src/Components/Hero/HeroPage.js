@@ -6,33 +6,27 @@ import HeroBottemTwo from './HeroBottemTwo/HeroBouttomTwo';
 import HeroBottemThree from './HeroBottemThree/HeroBottemThree';
 import HeroBottemFour from './HeroBottemFour/HeroBottemFour';
 import HeroFiveBottem from './HeroBottemFive/HeroBottemFive';
-import Footer from '../../Components/Navigation/Header/Footer/Footer'
+import Footer from '../../Components/Navigation/Header/Footer/Footer';
+import * as heroMainStyles from '../UI/MainHeroStyles';
+
 
 export default function HeroPage(props){
+ const  classes = heroMainStyles.useMainStyles();
 return(
-  <React.Fragment>
- {/* <HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/>  */}
-<Grid container direction="column" >
-{/* <Grid item>
-<HeroBottemOne matchesMdd={props.matchesMdd}/>
+
+
+
+ <Grid container direction="column" >
+
+<Grid item container >
+<HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/> 
 </Grid>
-<Grid item>
-<HeroBottemTwo matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
+<Grid item style={{}} className={classes.mainContainer}>
+ {/* <HeroBottemOne matchesMdd={props.matchesMdd}/>  */}
 </Grid>
-<Grid item >
-<HeroBottemThree matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/> 
-</Grid>
-<Grid item style={{marginTop:"5em"}}>
-<HeroBottemFour matchessmd={props.matchessmd}></HeroBottemFour> 
-</Grid>
-<Grid item style={{marginTop:"5em"}}>
-<HeroFiveBottem matchessmd={props.matchessmd}></HeroFiveBottem> 
-</Grid>
-<Grid item style={{marginTop:"2em"}}>
-<Footer matchessmd={props.matchessmd}></Footer> 
-</Grid> */}
-</Grid>
- </React.Fragment>
+
+</Grid> 
+
   
 )
 

@@ -36,13 +36,10 @@ export const useStylesAppBar = makeStyles(theme => ({
   
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    
-    marginBottom: "5em",
-    [theme.breakpoints.down("md")]: {
-      marginBottom: "0em"
-    },
-    [theme.breakpoints.down("xs")]: {
-      marginBottom: "0em"
+    marginBottom: "5.5em",
+   
+    [theme.breakpoints.down("sm")]: {
+    marginBottom: "2.4em"
     }
   },
   appGridContainer:{
@@ -97,7 +94,7 @@ export const drawerUseStyles = makeStyles(theme => ({
   toolbarMargin : {
     ...theme.mixins.toolbar,
     marginBottom: "2.5em",
-    
+  
   },
   
 }));

@@ -6,7 +6,7 @@ export default function HeroTopHeader(){
   const classes = HeroTopConst.useStyles();
 return(
           <Paper className={classes.paper} elevation={0}>
-           <Grid container justify="space-evenly" alignItems="center" >
+           <Grid container justify="space-around" alignItems="center" >
            <Hidden smDown>
              <Grid item>
              <Typography variant="caption" className={classes.textStyle}>
@@ -18,7 +18,7 @@ return(
              </Grid>
              </Hidden>
               <Grid item >
-                <Button variant="caption" 
+                <Button variant="outlined" 
                  className={classes.donateButton}>Donate Now</Button>           
               </Grid>
              </Grid>

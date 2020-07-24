@@ -32,7 +32,7 @@ export default function DrawerBuilder(props){
 
 return(
   <React.Fragment>
- <SwipeableDrawer d
+ <SwipeableDrawer disablePadding
   disableBackdropTransition={!iOS}
  disableDiscovery={iOS}
  open={openDrawer}
