@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 export const useStyles = makeStyles(theme => ({
   h3Contaner:{
     ...theme.typography.h3,
-     maxWidth:"16em",
+     maxWidth:"20em",
     fontSize:"2em",
     lineHeight:"1.5em",
     marginBottom:"1em",
@@ -31,6 +31,8 @@ export const useStyles = makeStyles(theme => ({
   },
   subtitle2Contaner:{
  fontWeight:200,
+ //marginRight:"5em"
+
   }
 
 }));

@@ -6,7 +6,7 @@ import * as heroBFContatentAndStyles from '../../UI/HeroBFStyleAndContent';
 export default function HeroFiveBottem(props){
   const classes = heroBFContatentAndStyles.useStyles();
   return(
-    <Grid container justify="center" alignItems="flex-end">
+    <Grid container justify="center" >
       <Grid item>
         <Grid container direction="column" justify="center" >
           <Grid item>

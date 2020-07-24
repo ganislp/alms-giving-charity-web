@@ -19,7 +19,8 @@ export const useStyles = makeStyles(theme => ({
   },
 
 rowContaner:{
-  marginTop:"5em"
+  marginTop:"5em",
+ 
 },
 h3ContainerMain:{
 ...theme.typography.h3,
@@ -59,6 +60,18 @@ iconContainer:{
 },
 gridItemSpcing:{
   marginBottom:"2em"
+},
+usefullMargin:{
+  marginRight:"10em",
+  [theme.breakpoints.down("md")]: {
+    marginRight:"3em",
+   },
+},
+leastNewsMargin:{
+  marginRight:"8em",
+  [theme.breakpoints.down("md")]: {
+    marginRight:"4em",
+   },
 }
 
 }));

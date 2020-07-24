@@ -96,7 +96,7 @@ export const useStylesFeaturedCause = makeStyles(theme => ({
   rowContaner:{
     // height: "35em",
     paddingTop:"2em",
-    paddingLeft:"1em",
+   // paddingLeft:"1em",
    [theme.breakpoints.down("md")]: {
     // height: "36em",
      paddingTop:"1em",
@@ -115,7 +115,7 @@ export const useStylesFeaturedCause = makeStyles(theme => ({
   },
   imgContaner:{
     height:"18em",
-    marginRight:"2em",
+  //  marginRight:"2em",
     [theme.breakpoints.down("md")]: {
       marginBottom:"1em",
       marginRight:"0em",
@@ -123,8 +123,8 @@ export const useStylesFeaturedCause = makeStyles(theme => ({
      [theme.breakpoints.down("sm")]: {
       // height: "36em",
        paddingTop:"0.2em",
-       paddingLeft:"4em",
-      paddingRight:"4em",
+     //  paddingLeft:"4em",
+     // paddingRight:"4em",
       marginRight:"0em",
      },
   },

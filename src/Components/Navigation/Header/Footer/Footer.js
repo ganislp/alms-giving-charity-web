@@ -22,7 +22,7 @@ return(
           </Grid>
           </Grid>
         </Grid>
-        <Grid item style={{marginRight:"10em"}}>
+        <Grid item className={classes.usefullMargin}>
         <Typography variant="h3" className={classes.h3Container}> 
         Useful Links</Typography>
         <Grid item container direction="column">
@@ -70,7 +70,7 @@ return(
            </Grid>
           </Grid>
         </Grid>
-        <Grid item style={{marginRight:"8em"}}>
+        <Grid item className={classes.leastNewsMargin}>
         <Typography variant="h3" className={classes.h3Container}> 
         Latest News
         </Typography>
