@@ -13,105 +13,54 @@ return(
 <Grid item className={classes.paper} container  justify="center" >     
       <Grid item container direction="row"    justify="center" className={classes.rowContaner}>
         <Grid item style={{marginRight:"3em"}}>
-          <Typography variant="h3" className={classes.h3ContainerMain}> The Charity
+          <Typography variant="h3" className={classes.h3ContainerMain}> 
+          {footerStylesAndContent.MainFooterHeading.Heading}
           </Typography>
           <Grid item container direction="column">
             <Grid item>
           <Typography variant="body1" className={classes.bodyContainer}> 
-           Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</Typography>
+          {footerStylesAndContent.MainFooterHeading.boby}</Typography>
           </Grid>
           </Grid>
         </Grid>
         <Grid item className={classes.usefullMargin}>
         <Typography variant="h3" className={classes.h3Container}> 
-        Useful Links</Typography>
+        {footerStylesAndContent.FooterUseFullLinks.Heading}
+        </Typography>
         <Grid item container direction="column">
-          <Grid item>
-          <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Privacy Polticy
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Become a Volunteer
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Donate
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Testimonials
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Causes
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} gutterBottom> 
-           Portfolio
-           </Typography>
-           </Grid>
-           <Grid item>
-           <Typography variant="subtitle1"
-          className={classes.subtitle1Contaner} gutterBottom> 
-           News
-           </Typography>
-           </Grid>
-          </Grid>
+         {footerStylesAndContent.FooterUseFullLinks.links.map((link,index) => (
+             <Grid item key={`${link.linkName} ${index}`}>
+             <Typography variant="subtitle1"
+              className={classes.subtitle1Contaner} gutterBottom> 
+              {link.linkName}
+              </Typography>
+              </Grid>
+         ))}
+       </Grid>
         </Grid>
         <Grid item className={classes.leastNewsMargin}>
         <Typography variant="h3" className={classes.h3Container}> 
-        Latest News
+        {footerStylesAndContent.FooterLatestNewsLinks.Heading}
         </Typography>
         <Grid item container direction="column" >
-          <Grid item className={classes.gridItemSpcing}>
-          <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} > 
-           A new cause to help
-           </Typography>
-           <Typography variant="caption"
-           className={classes.subtitle2Contaner} > 
-           MArch 12, 2018
-           </Typography>
-          </Grid>
-
-          <Grid item className={classes.gridItemSpcing}>
-          <Typography variant="subtitle1"
-          className={classes.subtitle1Contaner} > 
-           A new cause to help
-           </Typography>
-           <Typography variant="caption"
-           className={classes.subtitle2Contaner} > 
-           March 12,2018
-           </Typography>
-          </Grid>
-
-          <Grid item className={classes.gridItemSpcing}>
-          <Typography variant="subtitle1"
-           className={classes.subtitle1Contaner} > 
-           A new cause to help
-           </Typography>
-           <Typography variant="caption"
-          className={classes.subtitle2Contaner} > 
-           March 12, 2018
-           </Typography>
-          </Grid>
-        
+        {footerStylesAndContent.FooterLatestNewsLinks.links.map((link,index) => (
+            <Grid item className={classes.gridItemSpcing}>
+            <Typography variant="subtitle1"
+             className={classes.subtitle1Contaner} > 
+            { link.title}
+             </Typography>
+             <Typography variant="caption"
+             className={classes.subtitle2Contaner} > 
+             { link.subTitle}
+             </Typography>
+            </Grid>
+         ))}
            </Grid>
         </Grid>
         <Grid item >
-          <Typography variant="h3" className={classes.h3Container}> Contact</Typography>
+          <Typography variant="h3" className={classes.h3Container}> 
+          {footerStylesAndContent.FooterContact.Heading}
+          </Typography>
           <Grid item container direction="column" >
             <Grid item container>
               <Grid item>
@@ -120,7 +69,7 @@ return(
               <Grid item >
             <Typography variant="subtitle1"
           className={classes.subtitle1Contaner} style={{marginBottom:"1em"}}> 
-           +45 677 8993000 223
+           {footerStylesAndContent.FooterContact.phoneNo}
            </Typography>
            </Grid>
             </Grid>
@@ -133,7 +82,7 @@ return(
               <Grid item>
             <Typography variant="subtitle1"
           className={classes.subtitle1Contaner} style={{marginBottom:"1em"}}> 
-           office@template.com
+          {footerStylesAndContent.FooterContact.email}
            </Typography>
            </Grid>
             </Grid>
@@ -146,7 +95,7 @@ return(
               <Grid item>
             <Typography variant="subtitle1"
            className={classes.subtitle1Contaner} style={{maxWidth:"10em"}}> 
-          Main Str. no 45-46, b3, 56832,Los Angeles, CA
+         {footerStylesAndContent.FooterContact.address}
            </Typography>
            </Grid>
             </Grid>
