@@ -5,7 +5,8 @@ import HeroBottemOne from './HeroBottemOne/HeroBottemOne';
 import HeroBottemTwo from './HeroBottemTwo/HeroBouttomTwo';
 import HeroBottemThree from './HeroBottemThree/HeroBottemThree';
 import HeroBottemFour from './HeroBottemFour/HeroBottemFour';
-import HeroFiveBottem from './HeroBottemFive/HeroBottemFive'
+import HeroFiveBottem from './HeroBottemFive/HeroBottemFive';
+import Footer from '../../Components/Navigation/Header/Footer/Footer'
 
 export default function HeroPage(props){
 return(
@@ -26,6 +27,9 @@ return(
 </Grid>
 <Grid item style={{marginTop:"5em"}}>
 <HeroFiveBottem matchessmd={props.matchessmd}></HeroFiveBottem> 
+</Grid>
+<Grid item style={{marginTop:"2em"}}>
+<Footer matchessmd={props.matchessmd}></Footer> 
 </Grid>
 </Grid>
  </React.Fragment>

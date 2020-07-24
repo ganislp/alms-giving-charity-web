@@ -4,6 +4,7 @@ import {createMuiTheme } from '@material-ui/core/styles';
 const appWhite="#ffff";
 const appBlue= "#0B72B9";
  const arcGrey = "#333";
+ const footerTextColour="#929191"
 //'Montserrat', sans-serif;
 export default  createMuiTheme({
   
@@ -90,7 +91,9 @@ typography:{
  
   },
 
- 
+ footerTextColor:{
+  color: footerTextColour,
+ }
 
 },
 overrides: {    
