@@ -13,16 +13,18 @@ export default function Appbar(props) {
   return (
     <React.Fragment>
       <AppBar position="fixed" className={classes.appbar} >
-     
-      <HeroTopHeader/>
-   
+      <Grid container direction="column">
+        <Grid item>
+        <HeroTopHeader/>
+        </Grid>
+        <Grid item>
         <Toolbar disableGutters>
             <Grid container
               direction="row"
-              justify={props.matchessmd ? "space-between" : "center"}
+              justify={props.matchessmd ? "flex-end" : "space-evenly"}
               alignItems="center" className={classes.appGridContainer}>
               <Grid item  className={classes.logoContaner}>
-              <Hidden mdDown>
+              <Hidden smDown>
                <Logo/>
                </Hidden>
               </Grid>
@@ -33,6 +35,13 @@ export default function Appbar(props) {
               </Grid>
             </Grid>
         </Toolbar>
+        </Grid>
+
+      </Grid>
+     
+    
+   
+       
 
       </AppBar>
       <div className={classes.toolbarMargin} />

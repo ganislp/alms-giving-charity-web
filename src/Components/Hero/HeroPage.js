@@ -11,9 +11,9 @@ import Footer from '../../Components/Navigation/Header/Footer/Footer'
 export default function HeroPage(props){
 return(
   <React.Fragment>
- <HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/> 
+ {/* <HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/>  */}
 <Grid container direction="column" >
-<Grid item>
+{/* <Grid item>
 <HeroBottemOne matchesMdd={props.matchesMdd}/>
 </Grid>
 <Grid item>
@@ -30,7 +30,7 @@ return(
 </Grid>
 <Grid item style={{marginTop:"2em"}}>
 <Footer matchessmd={props.matchessmd}></Footer> 
-</Grid>
+</Grid> */}
 </Grid>
  </React.Fragment>
   

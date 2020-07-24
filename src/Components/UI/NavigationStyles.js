@@ -19,6 +19,9 @@ export const useStyles = makeStyles(theme => ({
     },
     
   },
+  textStyle:{
+  color:theme.palette.common.white
+  },
 
   donateButton:{
     ...theme.typography.donateButton,
@@ -44,8 +47,6 @@ export const useStylesAppBar = makeStyles(theme => ({
   },
   appGridContainer:{
 backgroundColor: theme.palette.common.white,
-margin:0,
-padding:0,
   },
   appbar: {
     zIndex: theme.zIndex.modal + 1,
