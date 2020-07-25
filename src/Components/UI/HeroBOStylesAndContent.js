@@ -1,18 +1,24 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export const  useStyles = makeStyles(theme => ({
-  root:{
-    padding:0
-  },
-  // mainContainer:{
-  //   //marginLeft:  "15%",
+
+  cardItemContaner:{
+   // marginRight:"10%",
     
-  //   [theme.breakpoints.down("md")]: {
-  //     marginLeft:  "0em",
-  //     marginRight:"0em"
-  //   }
-     
-  //    },
+    // [theme.breakpoints.down("sm")]: {
+    //   marginRight:"0%",
+    //   marginLeft:"0%",
+    //   marginBottom:"2%",
+   
+    // },
+    // [theme.breakpoints.down("md")]: {
+    //   marginRight:"1%",
+    //   marginLeft:"0%",
+ 
+    // }
+
+  },
+
   cardContainer:{
     fontFamily: "Raleway",
     fontWeight: 700,
@@ -21,7 +27,11 @@ export const  useStyles = makeStyles(theme => ({
     lineHeight: 1,
     backgroundColor:theme.palette.common.blue,
     borderRadius:"20px",
-   //  marginRight:"5%",
+   // paddingTop:"0.5em",
+    // paddingLeft:"0.5em",
+    //paddingRight:"0.5em",
+    
+  
     
     //  [theme.breakpoints.down("md")]: {
     //   marginBottom:"5%",
@@ -61,18 +71,18 @@ export const  useStyles = makeStyles(theme => ({
    
  },
 h1Contaner:{
-  fontSize:"1rem",
-//marginTop:"0.3em",
-  // marginBottom:"1em",
-  // textAlign:"center" 
+  fontSize:"1.5rem",
+//marginTop:"1em",
+ //marginBottom:"1em",
+ //textAlign:"center" 
 },
 
 bodyContaner:{
  fontSize:"1rem",
  color:theme.palette.common.white,
- maxWidth:"15em",
- fontWeight:300
- 
+ maxWidth:"17em",
+ fontWeight:300,
+ //marginBottom:"1em",
 // textAlign:"center" ,
 // [theme.breakpoints.down("xs")]: {
 //   maxWidth:"26em",

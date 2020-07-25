@@ -27,19 +27,7 @@ export const heroTopStyles = makeStyles(theme => ({
      
      },
 
-  imageContaner:{
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    height: "50em",
-    width: "100%",
-    [theme.breakpoints.down("md")]: {
-      height:"20em",
-   } ,
-   [theme.breakpoints.only("md")]: {
-    height:"25em",
- } 
-  },
+
   imageOverlayContaner:{
     backgroundColor:"rgba(0, 0, 0, 0.4)"
   },
@@ -50,46 +38,72 @@ export const heroTopStyles = makeStyles(theme => ({
      marginRight:"1em",
      "&:hover": {
        backgroundColor: theme.palette.common.blue
-     }
-     
+     },
+
+     [theme.breakpoints.down("md")]: {
+      marginLeft:"1em",
+      padding: "1em",
+    },
+     [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+      marginLeft:"0.5em",
+      padding: "0.5em",
+    }
    },
+  
+  
    learnButtonSpan:{
     marginRight: 40, 
     marginLeft: 40,
-    [theme.breakpoints.down("sm")]: {
+
+    [theme.breakpoints.down("md")]: {
       marginRight: 20, 
       marginLeft: 20,
    } ,
-   [theme.breakpoints.down("md")]: {
-    marginRight: 20, 
-    marginLeft: 20,
+ 
+    [theme.breakpoints.down("xs")]: {
+      marginRight: 20, 
+      marginLeft: 20,
+   } ,
+ 
+   },
+
+
+  //  gridTextContaner:{
+  //    marginLeft:"25em",
+  //   [theme.breakpoints.down("md")]: {
+  //     textAlign:"center",
+  //     marginLeft:"0em",
+  //  } 
+  //  },
+
+   h1Contaner:{
+    [theme.breakpoints.down("md")]: {
+      fontSize:"5rem", 
+      paddingLeft:"0.3em",  
+   } ,
+
+   [theme.breakpoints.down("xs")]: {
+    fontSize:"3.5rem",
+    paddingLeft:"0.3em",
+    paddingTop:"0em"
  } 
    },
 
 
-   gridTextContaner:{
-     marginLeft:"25em",
-    [theme.breakpoints.down("md")]: {
-      textAlign:"center",
-      marginLeft:"0em",
-   } 
-   },
 
-   h1Contaner:{
-    [theme.breakpoints.down("md")]: {
-      fontSize:"2.5rem",
-      marginTop:"1em"
-   } ,
-  
-   },
    h4Contaner:{
     marginBottom:"0.5em",
     [theme.breakpoints.down("md")]: {
-      fontSize:"2rem",
-
-    },
-    [theme.breakpoints.down("sm")]: {
-     marginBottom:"2em"
+      fontSize:"1.5rem",
+      paddingLeft:"1.2em",
+      marginBottom:"1em",
+   } ,
+  
+    [theme.breakpoints.down("xs")]: {
+      fontSize:"1.5rem",
+      paddingLeft:"0.8em",
+      marginBottom:"1.5em",
    } 
    } ,
    
@@ -99,10 +113,17 @@ export const heroTopStyles = makeStyles(theme => ({
     fontSize:"1rem",
     [theme.breakpoints.down("md")]: {
       maxWidth:"25em",
+      textAlign:"left",
+      paddingLeft:"1.5em",
+      fontSize:"1rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth:"25em",
       paddingLeft:"1em",
       paddingRight:"1em",
       textAlign:"center"
-    }
+    },
+   
    },
 
     rightIconContainer: {

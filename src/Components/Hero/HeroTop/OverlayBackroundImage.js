@@ -14,9 +14,18 @@ export default function OverlayBackroundImage(props) {
       backgroundRepeat: "no-repeat",
       height: "45em",
       width: "100%",
+
       [theme.breakpoints.down("md")]: {
-        height: "35em",
-      }
+        height: "22em",
+        },
+
+     
+      [theme.breakpoints.down("xs")]: {
+        height: "12em",
+      }, 
+      
+     
+
     },
   }));
   const classesImage = useStylesImage();
@@ -24,8 +33,8 @@ export default function OverlayBackroundImage(props) {
 
     <Grid className={classesImage.background} container >
       <Grid item className={classes.paper} container>
-        <Grid container direction="column" justify="center" 
-        alignItems={props.matchesMdd || props.matchessmd ? "center":"flex-start"} 
+        <Grid container direction="column" justify={props.matchessmd ? "flex-start": "center" } 
+        alignItems={props.matchesMdd || props.matchessmd ? "flex-start":"flex-start"} 
         className={classes.mainContainer}>
           <Grid item >
             <Typography variant="h1" className={classes.h1Contaner} >
@@ -38,7 +47,7 @@ export default function OverlayBackroundImage(props) {
               {heroContatentAndStyles.HeroTopHeaderContatent.subHeading}
             </Typography>
           </Grid>
-          <Hidden smDown>
+          <Hidden xsDown>
             <Grid item >
               <Typography variant="body1"
                 className={classes.bodyContainer}>
@@ -48,7 +57,7 @@ export default function OverlayBackroundImage(props) {
           </Hidden>
           <Grid item>
             <Grid container item
-              justify={props.matchesMdd ? "center" : "flex-start"}
+              justify={ "center"}
               alignItems="center">
               {heroContatentAndStyles.HeroTopButtonText.map((buttonLable, index) => (
                 <Grid item key={`${buttonLable} ${index}`}>

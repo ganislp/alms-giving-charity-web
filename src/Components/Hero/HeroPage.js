@@ -21,7 +21,7 @@ return(
 <Grid item container >
 <HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/> 
 </Grid>
-<Grid item style={{}} className={classes.mainContainer}>
+<Grid item  >
  {/* <HeroBottemOne matchesMdd={props.matchesMdd}/>  */}
 </Grid>
 

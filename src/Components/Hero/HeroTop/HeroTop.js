@@ -17,10 +17,10 @@ export default function HeroTop(props) {
           activeItemIndex={activeItemIndex}
           numberOfCards={1}
           gutter={0}
-          leftChevron={<IconButton  className={classes.leftIconContainer} size="medium" >
+          leftChevron={props.matchesMdd ? null :<IconButton  className={classes.leftIconContainer} size="medium" >
           <ArrowBackIosIcon fontSize="inherit" />
         </IconButton>}
-          rightChevron={<IconButton  className={classes.rightIconContainer} size="medium">
+          rightChevron={props.matchesMdd ? null :<IconButton  className={classes.rightIconContainer} size="medium">
           <ArrowForwardIosIcon fontSize="inherit" />
         </IconButton>}
           outsideChevron
