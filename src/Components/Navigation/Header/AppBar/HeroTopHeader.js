@@ -2,11 +2,13 @@ import React from "react";
 import { Grid, Typography,Paper,Button,Hidden } from "@material-ui/core";
 import * as HeroTopConst from '../../../UI/NavigationStyles'
 
-export default function HeroTopHeader(){
+export default function HeroTopHeader(props){
   const classes = HeroTopConst.useStyles();
 return(
           <Paper className={classes.paper} elevation={0}>
-           <Grid container justify="space-around" alignItems="center" >
+           <Grid container justify= {props.matchessmd ? "center":"space-between"} 
+           alignItems="center" 
+           className={classes.gridMianContaner}>
            <Hidden smDown>
              <Grid item>
              <Typography variant="caption" className={classes.textStyle}>

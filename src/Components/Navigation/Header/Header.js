@@ -23,6 +23,7 @@ const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
     value={value}  
     setValue={setValue} 
     matchessmd={matchesSMD}
+    matchesMdd={matchesMD}
     />
 
     

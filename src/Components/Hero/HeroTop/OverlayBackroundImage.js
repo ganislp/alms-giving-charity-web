@@ -16,12 +16,12 @@ export default function OverlayBackroundImage(props) {
       width: "100%",
 
       [theme.breakpoints.down("md")]: {
-        height: "22em",
+        height: "26em",
         },
 
      
       [theme.breakpoints.down("xs")]: {
-        height: "12em",
+        height: "14em",
       }, 
       
      
@@ -35,7 +35,7 @@ export default function OverlayBackroundImage(props) {
       <Grid item className={classes.paper} container>
         <Grid container direction="column" justify={props.matchessmd ? "flex-start": "center" } 
         alignItems={props.matchesMdd || props.matchessmd ? "flex-start":"flex-start"} 
-        className={classes.mainContainer}>
+        className={classes.mainContainer} >
           <Grid item >
             <Typography variant="h1" className={classes.h1Contaner} >
               {heroContatentAndStyles.HeroTopHeaderContatent.heading}

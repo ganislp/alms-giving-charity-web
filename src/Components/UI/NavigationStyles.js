@@ -23,8 +23,19 @@ export const useStyles = makeStyles(theme => ({
   color:theme.palette.common.white
   },
 
+  gridMianContaner:{
+    paddingLeft:"15em",
+    paddingRight:"15em",
+    [theme.breakpoints.down("md")]: {
+      paddingLeft:"1em",
+      paddingRight:"1em"
+
+    },
+   },
+
   donateButton:{
     ...theme.typography.donateButton,
+  
   }
 }))
 
@@ -36,14 +47,21 @@ export const useStylesAppBar = makeStyles(theme => ({
   
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "5.5em",
+    marginBottom: "4.5em",
    
     [theme.breakpoints.down("sm")]: {
     marginBottom: "2.4em"
     }
   },
+
   appGridContainer:{
 backgroundColor: theme.palette.common.white,
+paddingLeft:"15em",
+paddingRight:"15em", 
+[theme.breakpoints.down("md")]: {
+  paddingLeft:"0em",
+  paddingRight:"0em"
+},
   },
   appbar: {
     zIndex: theme.zIndex.modal + 1,
@@ -93,7 +111,7 @@ export const drawerUseStyles = makeStyles(theme => ({
    
   toolbarMargin : {
     ...theme.mixins.toolbar,
-    marginBottom: "3em",
+    marginBottom: "4em",
   
   },
   

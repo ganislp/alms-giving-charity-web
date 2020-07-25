@@ -20,9 +20,11 @@ export const  HeroTopButtonText = [
 export const heroTopStyles = makeStyles(theme => ({
 
   mainContainer:{
-    marginLeft:  "15%",
+    paddingLeft:"15em",
+    paddingRight:"15em",
     [theme.breakpoints.down("md")]: {
-      marginLeft:  "0em",
+      paddingLeft:  "0em",
+      paddingRight:  "0em",
     }
      
      },
@@ -69,13 +71,7 @@ export const heroTopStyles = makeStyles(theme => ({
    },
 
 
-  //  gridTextContaner:{
-  //    marginLeft:"25em",
-  //   [theme.breakpoints.down("md")]: {
-  //     textAlign:"center",
-  //     marginLeft:"0em",
-  //  } 
-  //  },
+
 
    h1Contaner:{
     [theme.breakpoints.down("md")]: {
@@ -86,7 +82,7 @@ export const heroTopStyles = makeStyles(theme => ({
    [theme.breakpoints.down("xs")]: {
     fontSize:"3.5rem",
     paddingLeft:"0.3em",
-    paddingTop:"0em"
+    paddingTop:"0.5em"
  } 
    },
 

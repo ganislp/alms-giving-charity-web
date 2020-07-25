@@ -17,15 +17,16 @@ export default function Appbar(props) {
         
       <Grid container direction="column" >
         <Grid item>
-        <HeroTopHeader/>
+        <HeroTopHeader matchessmd={props.matchessmd}/>
         </Grid>
-        <Grid item>
-        <Toolbar disableGutters>
+        <Grid item >
+        <Toolbar disableGutters >
             <Grid container
               direction="row"
-              justify={props.matchessmd ? "flex-end" : "space-around"}
-              alignItems="center" className={classes.appGridContainer}>
-              <Grid item  className={classes.logoContaner}>
+              justify={props.matchessmd ? "flex-end" : "space-between"}
+              alignItems="center" className={classes.appGridContainer} 
+               >
+              <Grid item className={classes.logoContaner}>
               <Hidden smDown>
                <Logo/>
             
