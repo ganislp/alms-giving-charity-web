@@ -24,6 +24,9 @@ return(
 <Grid item  className={classes.bottemTwomainContainer}>
  <HeroBottemOne matchesMdd={props.matchesMdd}  matchessmd={props.matchessmd}/> 
 </Grid>
+<Grid item>
+{/* <HeroBottemTwo matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/> */}
+</Grid>
 
 </Grid> 
 

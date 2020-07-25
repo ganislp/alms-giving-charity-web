@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 export const  useStyles = makeStyles(theme => ({
 
   cardItemContaner:{
-    marginRight:"5%",
+    marginRight:"2%",
     [theme.breakpoints.down("md")]: {
       marginRight:"1%",
         },
@@ -29,9 +29,9 @@ export const  useStyles = makeStyles(theme => ({
     lineHeight: 1,
     backgroundColor:theme.palette.common.blue,
     borderRadius:"20px",
-    paddingTop:"1em",
-  paddingLeft:"2em",
-   paddingRight:"2em",
+    paddingTop:"0.5em",
+  paddingLeft:"0.5em",
+   paddingRight:"0.5em",
 
    [theme.breakpoints.down("md")]: {
     paddingLeft:"0em",
