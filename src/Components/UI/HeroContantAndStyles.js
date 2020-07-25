@@ -77,12 +77,13 @@ export const heroTopStyles = makeStyles(theme => ({
     [theme.breakpoints.down("md")]: {
       fontSize:"5rem", 
       paddingLeft:"0.3em",  
+      paddingTop:"0.5em"
    } ,
 
    [theme.breakpoints.down("xs")]: {
     fontSize:"3.5rem",
     paddingLeft:"0.3em",
-    paddingTop:"0.5em"
+    paddingTop:"0.1em"
  } 
    },
 
@@ -112,6 +113,7 @@ export const heroTopStyles = makeStyles(theme => ({
       textAlign:"left",
       paddingLeft:"1.5em",
       fontSize:"1rem",
+      
     },
     [theme.breakpoints.down("xs")]: {
       maxWidth:"25em",

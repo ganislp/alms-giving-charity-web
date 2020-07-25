@@ -10,7 +10,7 @@ export default function CardBuild(props){
   const classes = heroBTContatentAndStyles.useStyles();
   return (
   <Card className={classes.cardContainer}  >
-       <Grid item direction="column" alignItems= "center" container justify="center"md >
+       <Grid item direction="column" alignItems= "center" container justify="center" >
          <Grid item>
        <CardMedia 
         className={classes.media}

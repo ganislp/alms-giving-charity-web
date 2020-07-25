@@ -33,7 +33,7 @@ export default function OverlayBackroundImage(props) {
 
     <Grid className={classesImage.background} container >
       <Grid item className={classes.paper} container>
-        <Grid container direction="column" justify={props.matchessmd ? "flex-start": "center" } 
+        <Grid container direction="column" justify={props.matchesMdd ? "flex-start": "center" } 
         alignItems={props.matchesMdd || props.matchessmd ? "flex-start":"flex-start"} 
         className={classes.mainContainer} >
           <Grid item >
