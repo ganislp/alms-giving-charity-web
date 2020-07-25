@@ -3,23 +3,25 @@ import {makeStyles} from '@material-ui/core/styles';
 export const  useStyles = makeStyles(theme => ({
 
   cardItemContaner:{
-   // marginRight:"10%",
+    marginRight:"5%",
+    [theme.breakpoints.down("md")]: {
+      marginRight:"1%",
+        },
     
-    // [theme.breakpoints.down("sm")]: {
-    //   marginRight:"0%",
-    //   marginLeft:"0%",
-    //   marginBottom:"2%",
-   
-    // },
-    // [theme.breakpoints.down("md")]: {
-    //   marginRight:"1%",
-    //   marginLeft:"0%",
- 
-    // }
+    [theme.breakpoints.down("sm")]: {
+      marginBottom:"1em",
+      marginRight:"2%",
+        },
+ [theme.breakpoints.down("xs")]: {
+  marginBottom:"1em",
+  marginRight:"1em",
+  marginLeft:"1em",
+    },
 
   },
 
   cardContainer:{
+    
     fontFamily: "Raleway",
     fontWeight: 700,
     fontSize: "4rem",
@@ -27,69 +29,50 @@ export const  useStyles = makeStyles(theme => ({
     lineHeight: 1,
     backgroundColor:theme.palette.common.blue,
     borderRadius:"20px",
-   // paddingTop:"0.5em",
-    // paddingLeft:"0.5em",
-    //paddingRight:"0.5em",
-    
-  
-    
-    //  [theme.breakpoints.down("md")]: {
-    //   marginBottom:"5%",
-    //   marginRight:"0%",
-    //  }
-    // paddingTop:"0.5em",
-    // paddingLeft:"0.5em",
-    // paddingRight:"0.5em",
-    //height:"4em",
-    //marginRight:"0.5em",
-   
-  //  [theme.breakpoints.down("xs")]: {
-  //   margin:"0.1em",
-  //   height:"3em",
-  //    paddingLeft:"0em",
-  //    paddingRight:"0em",
-  //    marginRight:"0em",
-  // },
+    paddingTop:"1em",
+  paddingLeft:"2em",
+   paddingRight:"2em",
 
-  // [theme.breakpoints.only("md")]: {
-  //   margin:"0.2em",
-  //   padding:"0.2em",
-  // },
-  //  "&:hover": {
-  //   backgroundColor: "theme.palette.common.blue"
-  // },
+   [theme.breakpoints.down("md")]: {
+    paddingLeft:"0em",
+   paddingRight:"0em",
+   paddingTop:"0.5em",
+      },
+  
+   [theme.breakpoints.down("xs")]: {
+    paddingLeft:"0.1em",
+   paddingRight:"0.1em",
+   paddingTop:"0.5em",
+      },
+      
+ 
   },
   media: {
-    height: "0.5em",
-    width: "0.5em",
-   // margin: 'auto',
-    // [theme.breakpoints.down("xs")]: {
-    //   height: "0.5em",
-    //   width: "0.5em",
-    // },
-  
+    height: "1em",
+    width: "1em",
+    marginBottom:"0.5em",
+    [theme.breakpoints.down("sm")]: {
+      marginBottom:"0.1em",
+        }
    
  },
 h1Contaner:{
   fontSize:"1.5rem",
-//marginTop:"1em",
- //marginBottom:"1em",
- //textAlign:"center" 
+ marginBottom:"1em",
 },
 
 bodyContaner:{
  fontSize:"1rem",
  color:theme.palette.common.white,
- maxWidth:"17em",
+ maxWidth:"20em",
  fontWeight:300,
- //marginBottom:"1em",
-// textAlign:"center" ,
-// [theme.breakpoints.down("xs")]: {
-//   maxWidth:"26em",
-// },
-// [theme.breakpoints.only("md")]: {
-//   maxWidth:"15.5em",
-//  },
+ marginBottom:"1em",
+ [theme.breakpoints.down("md")]: {
+  maxWidth:"18em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginBottom:"0.5em",
+        }
 }
 
 }))
