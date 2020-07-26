@@ -17,7 +17,6 @@ return(
 
 
  <Grid container direction="column" >
-
 <Grid item container >
 <HeroTop matchessmd={props.matchessmd}  matchesMdd={props.matchesMdd}/> 
 </Grid>
@@ -25,7 +24,7 @@ return(
  <HeroBottemOne matchesMdd={props.matchesMdd}  matchessmd={props.matchessmd}/> 
 </Grid>
 <Grid item>
-{/* <HeroBottemTwo matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/> */}
+<HeroBottemTwo matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
 </Grid>
 
 </Grid> 

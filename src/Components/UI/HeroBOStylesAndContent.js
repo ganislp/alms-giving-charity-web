@@ -5,10 +5,12 @@ export const  useStyles = makeStyles(theme => ({
     paddingLeft:"15em",
     paddingRight:"15em",
     paddingTop:"5em",
+    paddingBottom:"5em",
     [theme.breakpoints.down("md")]: {
       paddingLeft:"1em",
       paddingRight:"1em",
       paddingTop:"2em",
+      paddingBottom:"2em",
     },
   
     
