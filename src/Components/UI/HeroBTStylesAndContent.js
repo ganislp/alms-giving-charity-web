@@ -47,8 +47,8 @@ export const heroBtStyles = makeStyles(theme => ({
       fontSize:"2rem",
       fontWeight: 700,
       [theme.breakpoints.down("md")]: {
-       marginTop:"2em",
-        marginBottom:"1em"
+       marginTop:"0.5em",
+        marginBottom:"0.5em"
       }, 
  },
   bodyContaner:{
