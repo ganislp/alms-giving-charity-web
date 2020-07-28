@@ -4,7 +4,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useTheme from '@material-ui/core/styles/useTheme';
 import Appbar from './AppBar/Appbar';
 import HeroPage from '../../Hero/HeroPage'
-import { Grid } from '@material-ui/core';
+
 
 
 
