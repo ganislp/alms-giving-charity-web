@@ -19,27 +19,30 @@ export default function FeaturedCause(props){
   <Grid item >
   <Paper className={classesFea.paper} elevation={0}>
   <Grid item  >
-<Grid container direction={props.matchesMdd ? "column":"row"} 
-justify="center" alignItems="center" className={classesFea.rowContaner} >
-<Grid >
+
+<Grid container  
+justify="center"  className={classesFea.rowContaner} >
+<Grid item lg={5} sm={6}>
+
+
 <img src={heroContatentAndStyles.FeaturedData.imagePath} 
 alt={heroContatentAndStyles.FeaturedData.imageName} 
 className={classesFea.imgContaner}></img>
 </Grid>
 
-<Grid item>
-<Grid item direction="column"   justify="center" container >
-<Grid item>
-<Typography variant="h3" className={classes.h3container} gutterBottom align={props.matchesMdd ? "center":undefined}>
+<Grid item lg={7} sm={6}>
+<Grid item direction="column"    container  justify="center" >
+<Grid item >
+<Typography variant="h3" className={classesFea.h3container} gutterBottom align={props.matchesMdd ? "center":undefined}>
             {heroContatentAndStyles.FeaturedData.subHeading} 
             </Typography>
 </Grid>
-<Grid item>
+<Grid item >
 <Typography variant="subtitle1" className={classes.subtitleContainer} gutterBottom align={props.matchesMdd ? "center":undefined}>
 {heroContatentAndStyles.FeaturedData.subTitle} 
             </Typography>
 </Grid>
-<Grid item>
+<Grid item >
 
 <Typography variant="body1" className={classesFea.bodycontainer} >
             {heroContatentAndStyles.FeaturedData.body}

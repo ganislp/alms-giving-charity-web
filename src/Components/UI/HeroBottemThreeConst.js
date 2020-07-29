@@ -8,7 +8,7 @@ export const useStyles = makeStyles(theme => ({
    marginLeft: "auto",
   paddingBottom:"2em",
      [theme.breakpoints.down("md")]: {
-      padding:"2em",
+      padding:"1em",
      },
    
   },
@@ -89,7 +89,7 @@ export const FeaturedData =
   subHeading:"Fundraiser for Kids",
   subTitle:"Aug 25, 2018 | Ball Room New York",
   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur."
-,imagePath:require('../../assets/Images/HeroBottem-3/d.jpg'),
+,imagePath:require('../../assets/Images/HeroBottem-3/featured-causes.jpg'),
 imageName:"FeaturedCause",buttonLable:"Donate Now"}
 
 export const useStylesFeaturedCause = makeStyles(theme => ({
@@ -103,59 +103,43 @@ export const useStylesFeaturedCause = makeStyles(theme => ({
   },
 
   rowContaner:{
-    // height: "35em",
     paddingTop:"2em",
-   // paddingLeft:"1em",
+   paddingLeft:"2em",
+   paddingRight:"2em",
    [theme.breakpoints.down("md")]: {
-    // height: "36em",
-     paddingTop:"1em",
-     paddingLeft:"1.5em",
-    // paddingRight:"1.5em",
-   
+    paddingTop:"1em",
+    paddingLeft:"0em",
+    paddingRight:"0em",
    },
-   [theme.breakpoints.down("sm")]: {
-    // height: "36em",
-     paddingTop:"1em",
-     paddingLeft:"1em",
-    paddingRight:"1em",
    
-   },
 
   },
+
   imgContaner:{
-    height:"18em",
-  //  marginRight:"2em",
-    [theme.breakpoints.down("md")]: {
-      marginBottom:"1em",
-      marginRight:"0em",
-     },
-     [theme.breakpoints.down("sm")]: {
-      // height: "36em",
-       paddingTop:"0.2em",
-     //  paddingLeft:"4em",
-     // paddingRight:"4em",
-      marginRight:"0em",
-     },
+   [theme.breakpoints.down("md")]: {
+    paddingBottom:"1em",
+    },
   },
   bodycontainer:{
     fontSize: "1rem",
     color: "#929191",
     fontWeight: 50,
-    maxWidth:"15em",
    lineHeight:"1.5em",
-   marginBottom:"2em",
-   marginTop:"2em",
+ paddingBottom:"8em",
    [theme.breakpoints.down("md")]: {
-  
-    maxWidth:"20em",
-    marginBottom:"1em",
-    marginTop:"0.5em",
+    paddingBottom:"2em",
+    paddingLeft:"1em",
+    paddingRight:"1em",
   },
   [theme.breakpoints.down("sm")]: {
-    // height: "36em",
-    maxWidth:"25em",
-    marginBottom:"1em",
-    marginTop:"0.5em",
+    paddingBottom:"3em",
+    paddingLeft:"0em",
+    paddingRight:"0em",
+  },
+  [theme.breakpoints.down("xs")]: {
+    paddingBottom:"0.5em",
+    paddingLeft:"1em",
+    paddingRight:"1em",
    },
   },
  
