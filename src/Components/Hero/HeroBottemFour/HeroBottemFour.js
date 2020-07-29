@@ -28,7 +28,7 @@ const chevronWidth = 20;
        </Grid>
       <Grid item>
       <Grid item className={classes.slideItemContainer}>    
-    <Hidden smDown>
+    <Hidden xsDown>
   <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
@@ -49,7 +49,7 @@ const chevronWidth = 20;
      ))}
       </ItemsCarousel > 
       </Hidden>
-      <Hidden mdUp>
+      <Hidden smUp>
  
   <CardItem  contentData={heroBFStylesAndContent.heroBottemFourSlideCards[0]} 
   />

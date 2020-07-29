@@ -8,7 +8,7 @@ export const heroBtStyles = makeStyles(theme => ({
      marginRight: "auto",
     marginLeft: "auto",
     paddingTop:"6em",
-   paddingBottom:"3em",
+   paddingBottom:"5em",
      [theme.breakpoints.down("md")]: {
       padding:"1em",
      },

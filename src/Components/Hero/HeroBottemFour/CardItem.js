@@ -23,7 +23,7 @@ export default function CardItem(props){
     {props.contentData.body}
     </Typography>
     </Grid>
-    <Grid item container justify="center" alignItems="center">
+    <Grid item container justify="center" alignItems="center" >
    <ButtonCom lable="Donate Now" ></ButtonCom>
     </Grid>
     </Grid>

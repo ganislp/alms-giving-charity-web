@@ -46,6 +46,12 @@ export const heroTopStyles = makeStyles(theme => ({
       marginLeft:"1em",
       padding: "1em",
     },
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+      marginLeft:"0.5em",
+      padding: "0.5em",
+    },
      [theme.breakpoints.down("xs")]: {
       fontSize: "1rem",
       marginLeft:"0.5em",

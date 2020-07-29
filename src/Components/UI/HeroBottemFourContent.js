@@ -29,6 +29,10 @@ export const useStyles = makeStyles(theme => ({
       marginLeft:"2em",
       padding: "0.5em",
      },
+     [theme.breakpoints.down("sm")]: {
+      marginLeft:"-5em",
+      padding: "0.5em",
+     },
   },
 
  leftIconContainer: {
@@ -45,12 +49,21 @@ export const useStyles = makeStyles(theme => ({
       padding: "0.5em",
      
      },
+     [theme.breakpoints.down("sm")]: {
+      marginRight:"-5em",
+      padding: "0.5em",
+     
+     },
   },
 
   slideItemContainer:{
     maxWidth:"70em",
     [theme.breakpoints.down("md")]: {
       maxWidth:"55em",
+     
+     },
+     [theme.breakpoints.down("sm")]: {
+      maxWidth:"46em",
      
      },
      
