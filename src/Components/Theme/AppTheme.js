@@ -73,7 +73,10 @@ typography:{
     fontFamily: "Roboto",
     fontWeight: "bold",
     backgroundColor: appBlue,
-    
+    "&:hover": {
+      backgroundColor: appBlue,
+      color: appWhite,
+    },
   
   },
   donateButton: {

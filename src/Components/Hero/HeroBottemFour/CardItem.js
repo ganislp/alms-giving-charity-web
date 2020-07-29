@@ -1,13 +1,13 @@
 import React from 'react';
-import {Card,CardContent,CardMedia, Grid,Typography } from "@material-ui/core";
-import ButtonCom from '../../UI/Button/ButtonComp';
+import {Card,CardContent,CardMedia, Grid,Typography,Button } from "@material-ui/core";
+
 import * as heroBFStylesAndContent from '../../UI/HeroBottemFourContent';
 
 
 export default function CardItem(props){
   const classes = heroBFStylesAndContent.useStyles();
   return(
-
+    <Grid   item>
     <Card  >
 <CardMedia  image={props.contentData.imageUrl} className={classes.cardMediaContainer}
       />
@@ -24,14 +24,21 @@ export default function CardItem(props){
     </Typography>
     </Grid>
     <Grid item container justify="center" alignItems="center" >
-   <ButtonCom lable="Donate Now" ></ButtonCom>
+    <Button 
+       // component={Link}// to="/revolution"
+                    className={classes.learnButton}
+                    variant="outlined"
+                    // onClick={() => props.setValue(2)}
+                  >
+                    <span>Donate Now</span>                 
+                  </Button>
     </Grid>
     </Grid>
 
   
     </CardContent>
 </Card>
-
+</Grid> 
 
   )
 }

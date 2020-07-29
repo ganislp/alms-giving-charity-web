@@ -1,11 +1,26 @@
 import {makeStyles} from '@material-ui/core/styles';
 export const useStyles = makeStyles(theme => ({
+
+  slideItemContainer:{
+    paddingRight:"15em",
+    paddingLeft:"15em",
+    marginRight: "auto",
+   marginLeft: "auto",
+  //  backgroundColor:"green",
+   [theme.breakpoints.down("md")]: {
+    paddingRight:"0em",
+    paddingLeft:"0em",
+  //  marginRight: "auto",
+   //marginLeft: "auto"
+   },
+  },
+
+
   root: {
     flexGrow: 1
   },
   paper: {
     width: "100%",
-    height: "47em",
     backgroundColor:"rgba(255,255,255, 0.8)"
   },
   background: {
@@ -19,18 +34,14 @@ export const useStyles = makeStyles(theme => ({
   rightIconContainer: {
     padding: "1em",
     backgroundColor:theme.palette.common.blue,
-    marginLeft:"10em",
+    marginLeft:"5em",
     color:theme.palette.common.white,
     "&:hover": {
       backgroundColor: theme.palette.common.blue,
       color:  theme.palette.common.white,
     },
     [theme.breakpoints.down("md")]: {
-      marginLeft:"2em",
-      padding: "0.5em",
-     },
-     [theme.breakpoints.down("sm")]: {
-      marginLeft:"-5em",
+      marginLeft:"-3em",
       padding: "0.5em",
      },
   },
@@ -38,36 +49,19 @@ export const useStyles = makeStyles(theme => ({
  leftIconContainer: {
     padding: "1em",
     backgroundColor:theme.palette.common.blue,
-    marginRight:"10em",
+    marginRight:"5em",
     color:theme.palette.common.white,
     "&:hover": {
       backgroundColor: theme.palette.common.blue,
       color:  theme.palette.common.white,
     },
     [theme.breakpoints.down("md")]: {
-      marginRight:"2em",
+      marginRight:"-3em",
       padding: "0.5em",
-     
-     },
-     [theme.breakpoints.down("sm")]: {
-      marginRight:"-5em",
-      padding: "0.5em",
-     
      },
   },
 
-  slideItemContainer:{
-    maxWidth:"70em",
-    [theme.breakpoints.down("md")]: {
-      maxWidth:"55em",
-     
-     },
-     [theme.breakpoints.down("sm")]: {
-      maxWidth:"46em",
-     
-     },
-     
-  },
+
 
   cardMediaContainer:{
     paddingTop: '70.25%',
@@ -91,8 +85,9 @@ marginBottom:"1.5em",
     ...theme.typography.cardbody1,
     marginBottom:"1.5em",
     [theme.breakpoints.down("md")]: {
-      textAlign:"center",
-     maxWidth:"20em"
+    //  textAlign:"center",
+   // maxWidth:"20em",
+   marginBottom:"1em",
      },
   },
 
@@ -100,7 +95,10 @@ mainh3:{
   fontSize:"2.5em",
   marginBottom:"1em",
   fontWeight:600,
-  paddingBottom:'1em'
+  paddingBottom:'1em',
+  [theme.breakpoints.down("md")]: {
+    marginBottom:"0.5em",
+   },
 },
 
 spenH1TextUnderLine:{
@@ -108,7 +106,10 @@ spenH1TextUnderLine:{
   borderBottom:"5px solid #0B72B9",
   borderColor:theme.palette.common.blue,
   paddingBottom:"0.4em"
-}
+},
+learnButton: {
+  ...theme.typography.learnButton
+},
 
 }));
 export const HeroBottemFourHeader = {
