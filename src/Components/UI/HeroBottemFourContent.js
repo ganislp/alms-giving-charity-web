@@ -29,6 +29,9 @@ export const useStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat",
     height: "47em",
     width: "100%",
+    [theme.breakpoints.down("md")]: {
+      height: "40em",
+     },
   },
   rightIconContainer: {
     padding: "1em",
