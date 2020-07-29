@@ -11,7 +11,7 @@ import * as heroMainStyles from '../UI/MainHeroStyles';
 
 
 export default function HeroPage(props){
- const  classes = heroMainStyles.useMainStyles();
+
 return(
 
 
@@ -25,6 +25,9 @@ return(
 </Grid>
 <Grid item>
 <HeroBottemTwo matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
+</Grid>
+<Grid item>
+<HeroBottemThree matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
 </Grid>
 
 </Grid> 

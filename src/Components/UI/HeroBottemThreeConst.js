@@ -1,46 +1,52 @@
 import {makeStyles} from '@material-ui/core/styles';
 
+export const useStyles = makeStyles(theme => ({
+  mainRowContainer: {
+     paddingRight:"15em",
+    paddingLeft:"15em",
+    marginRight: "auto",
+   marginLeft: "auto",
+  paddingBottom:"2em",
+     [theme.breakpoints.down("md")]: {
+      padding:"2em",
+     },
+   
+  },
+}));
+
 export const useStylesUpcomingEvents = makeStyles(theme => ({
+
+mainContainer:{
+  paddingBottom:"2em",
+  [theme.breakpoints.down("md")]: {
+    paddingBottom:"2em",
+  } 
+},
+
 h2MainContainer:{
   fontSize:'3rem',
   fontWeight:400
   ,color:theme.palette.common.blue,
   marginBottom:"1em",
   marginTop:"2em",
-  [theme.breakpoints.down("sm")]: {
-    marginTop:"1em",
-    marginBottom:"0.5em",
-  
-     },
 },
 h3container:{
   ...theme.typography.h3,
+  color:"#333"    
+},
+
+subtitleContainer:{
+  fontSize: "0.8rem",  
 },
 bodycontainer:{
   fontSize: "1rem",
   color: "#929191",
   fontWeight: 50,
-  maxWidth:"20em",
  lineHeight:"1.5em",
- marginBottom:"0.2em",
- [theme.breakpoints.down("sm")]: {
-  maxWidth:"17em",
+ paddingBottom:"1em",  
+},
 
-   },
-},
-imgContaner:{
-  marginRight:"2em",
-  marginBottom:"2em",
-  height:"10em",
-  [theme.breakpoints.down("sm")]: {
-    marginRight:"1em",
 
-  
-     },
-},
-subtitleContainer:{
-  fontSize: "0.8rem",
-},
 learnButton: {
   ...theme.typography.learnButton
 },
@@ -53,7 +59,7 @@ export const HeroBottemThreeConst = [
   subHeading:"Fundraiser for Kids",
   subTitle:"Aug 25, 2018 | Ball Room New York",
   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris."
-,imagePath:require('../../assets/Images/HeroBottem-3/u-1.jpg'),
+,imagePath:require('../../assets/Images/HeroBottem-3/event-1.jpg'),
 imageName:"Fundraiser"},
 
   {
@@ -61,7 +67,7 @@ imageName:"Fundraiser"},
   subHeading:"Bring water to the childrens",
   subTitle:"Aug 25, 2018 | Ball Room New York",
   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris."
-  ,imagePath:require('../../assets/Images/HeroBottem-3/u-2.jpg'),
+  ,imagePath:require('../../assets/Images/HeroBottem-3/event-2.jpg'),
   imageName:"Bring water"
 },
 {
@@ -69,7 +75,7 @@ imageName:"Fundraiser"},
 subHeading:"Bring water to the childrens",
 subTitle:"Aug 25, 2018 | Ball Room New York",
 body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris."
-,imagePath:require('../../assets/Images/HeroBottem-3/u-3.jpg'),
+,imagePath:require('../../assets/Images/HeroBottem-3/event-3.jpg'),
 imageName:"Bring water"
 },
 ];

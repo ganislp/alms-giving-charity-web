@@ -21,8 +21,6 @@ export const heroBtStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat",
   },
 
- 
-
   img: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -47,7 +45,6 @@ export const heroBtStyles = makeStyles(theme => ({
     fontSize:"1rem",
    color:"#b7b7b7",
     lineHeight: 2,
-  
     paddingBottom:"5em",
     paddingRight:"2em",
     [theme.breakpoints.down("md")]: {

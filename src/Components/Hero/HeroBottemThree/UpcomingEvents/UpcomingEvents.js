@@ -8,26 +8,31 @@ import * as heroContatentAndStyles from '../../../UI/HeroBottemThreeConst';
 export default function UpcomingEvents(props){
   const classes = heroContatentAndStyles.useStylesUpcomingEvents();
   return(
-      <Grid item>
-      <Grid container item  >
-        <Grid item >
+  
+      <Grid container item justify="center" className={classes.mainContainer}>
+      
+        <Grid item xs={6} sm={3} md={4} lg={3}  >
          <img src={props.image} alt={props.imageName} className={classes.imgContaner}></img>
         </Grid>
-        <Grid item >
-          <Grid item container direction="column"  >
+        
+          <Grid item container direction="column" xs={6} sm={9} md={8} lg={9}   >
           <Grid item >
-            <Typography variant="h3" className={classes.h3container} gutterBottom align={props.matchessmd ? "center":undefined}>
+            <Typography variant="h3" className={classes.h3container} gutterBottom >
             {props.subHeading}
             </Typography>
-            <Typography variant="subtitle1" gutterBottom className={classes.subtitleContainer} align={props.matchessmd ? "center":undefined}>
+          </Grid>
+          <Grid item>
+          <Typography variant="subtitle1" gutterBottom >
             {props.subTitle}
             </Typography>
-            <Typography variant="body1" className={classes.bodycontainer} align={props.matchessmd ? "center":undefined}>
+          
+          </Grid>
+        <Grid item>
+        <Typography variant="body1" className={classes.bodycontainer} >
             {props.body}
             </Typography>
-       
-            </Grid>
-            <Grid item container justify={props.matchessmd ? "center":"flex-start"}>
+        </Grid>
+        <Grid item container >
             <Button 
        // component={Link}// to="/revolution"
                     className={classes.learnButton}
@@ -40,9 +45,8 @@ export default function UpcomingEvents(props){
           </Grid>
         </Grid>
 
-      </Grid>
 
-      </Grid>
+      
   )
 }
 
