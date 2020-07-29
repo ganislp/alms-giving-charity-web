@@ -29,6 +29,9 @@ h2MainContainer:{
   ,color:theme.palette.common.blue,
   marginBottom:"1em",
   marginTop:"2em",
+  [theme.breakpoints.down("md")]: {
+    fontSize:'2rem',
+  } 
 },
 h3container:{
   ...theme.typography.h3,
