@@ -6,7 +6,6 @@ export const useStyles = makeStyles(theme => ({
     paddingLeft:"15em",
     marginRight: "auto",
    marginLeft: "auto",
-  //  backgroundColor:"green",
    [theme.breakpoints.down("md")]: {
     paddingRight:"0em",
     paddingLeft:"0em",
@@ -85,7 +84,7 @@ marginBottom:"1.5em",
     ...theme.typography.cardbody1,
     marginBottom:"1.5em",
     [theme.breakpoints.down("md")]: {
-    //  textAlign:"center",
+      textAlign:"center",
    // maxWidth:"20em",
    marginBottom:"1em",
      },
@@ -98,6 +97,7 @@ mainh3:{
   paddingBottom:'1em',
   [theme.breakpoints.down("md")]: {
     marginBottom:"0.5em",
+    paddingLeft:"0.5em"
    },
 },
 
