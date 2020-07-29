@@ -26,7 +26,7 @@ const chevronWidth = 20;
     <ItemsCarousel
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
-          numberOfCards={props.matchesMdd ? 2 : props.matchessmd ? 1 : 3}
+          numberOfCards={props.matchesxsd ? 1 : props.matchesMdd ? 2 : 3}
           gutter={10}
           leftChevron={<IconButton  className={classes.leftIconContainer} size="medium" disableRipple>
           <ArrowBackIosIcon fontSize="inherit" />

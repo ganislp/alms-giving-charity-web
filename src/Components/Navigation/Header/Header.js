@@ -15,6 +15,7 @@ const theme = useTheme();
 // const matchesSM = useMediaQuery(theme.breakpoints.down("xs"));
  const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
 const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
+const matchesXSD = useMediaQuery(theme.breakpoints.down("xs"));
 
   return(
     <BrowserRouter>
@@ -37,7 +38,7 @@ const matchesSMD = useMediaQuery(theme.breakpoints.down("sm"));
  
     <Switch>
     <Route exact path="/" render={props => (<HeroPage {...props} 
-    matchessmd={matchesSMD} matchesMdd={matchesMD}/>
+    matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
             )}></Route>
     <Route exact path="/aboutus" component={() => <div>Aboutus</div>}></Route>
     <Route exact path="/causes" component={() => <div>Causes</div>}></Route>

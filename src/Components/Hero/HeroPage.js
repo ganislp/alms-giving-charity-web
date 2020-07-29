@@ -30,7 +30,7 @@ return(
 <HeroBottemThree matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
 </Grid>
 
-<HeroBottemFour matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/>
+<HeroBottemFour matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
 
 <Grid item>
 {/* <HeroFiveBottem matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/> */}
