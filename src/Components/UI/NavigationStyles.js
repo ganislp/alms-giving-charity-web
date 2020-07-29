@@ -35,6 +35,7 @@ export const useStyles = makeStyles(theme => ({
 
   donateButton:{
     ...theme.typography.donateButton,
+    color:theme.palette.common.white
   
   }
 }))
