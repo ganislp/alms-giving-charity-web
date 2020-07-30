@@ -33,7 +33,7 @@ return(
 <HeroBottemFour matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
 
 <Grid item>
-{/* <HeroFiveBottem matchessmd={props.matchessmd} matchesMdd={props.matchesMdd}/> */}
+<HeroFiveBottem matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
 </Grid>
 </Grid> 
 

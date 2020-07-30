@@ -1,39 +1,52 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles(theme => ({
+
+  mainContainer:{
+   paddingRight:"15em",
+   paddingLeft:"15em",
+    marginRight: "auto",
+   marginLeft: "auto",
+   paddingTop:"5em",
+   paddingBottom:"5em",
+   [theme.breakpoints.down("md")]: {
+    paddingRight:"1em",
+    paddingLeft:"1em",
+    paddingTop:"1em",
+   paddingBottom:"1em",
+   },
+  },
+
+  itemContainer:{
+   paddingBottom:"2em",
+   paddingTop:"2em"
+  },
   h3Contaner:{
     ...theme.typography.h3,
-     maxWidth:"20em",
-    fontSize:"2em",
-    lineHeight:"1.5em",
-    marginBottom:"1em",
-   
-    [theme.breakpoints.down("sm")]: {
-      textAlign:"center",
-      paddingLeft :"0.5em",
-      paddingRight :"0.5em"
+    fontSize:"2.5em",
+    lineHeight:"1.6em",
+    paddingBottom:"1em",
+    [theme.breakpoints.down("md")]: {
+     fontSize:"1.5em",
+   paddingBottom:"1em",
      },
   },
   bodyContaner:{
     ...theme.typography.cardbody1,
-    maxWidth:"30em",
-    [theme.breakpoints.down("sm")]: {
-      textAlign:"center",
-      paddingLeft :"1em",
-      paddingRight :"1em",
-      marginBottom:"2em",
-     },
+   fontSize:"1em",
   },
   subTitleContaner:{
     fontSize:"3em",
- marginBottom:"0.5em",
+ paddingTop:"0.5em",
+ paddingBottom:"1em",
  fontWeight:400,
+ [theme.breakpoints.down("md")]: {
+  fontSize:"2em",
+  paddingTop:"0em",
+  paddingBottom:"0em",
   },
-  subtitle2Contaner:{
- fontWeight:200,
- //marginRight:"5em"
-
-  }
+  },
+ 
 
 }));
 

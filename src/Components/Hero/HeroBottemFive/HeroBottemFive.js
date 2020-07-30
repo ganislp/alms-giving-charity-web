@@ -6,35 +6,62 @@ import * as heroBFContatentAndStyles from '../../UI/HeroBFStyleAndContent';
 export default function HeroFiveBottem(props){
   const classes = heroBFContatentAndStyles.useStyles();
   return(
-    <Grid container justify="center" >
-      <Grid item>
-        <Grid container direction="column" justify="center" >
-          <Grid item>
-          <Typography variant="h3" className={classes.h3Contaner}>
+ <Grid container className={classes.mainContainer} justify={props.matchesxsd ? "center" : "flex-end"} 
+ alignItems={props.matchesxsd ? "center" : "flex-end"}>
+   <Grid item direction="column"   sm={12} lg={5}>
+<Grid item lg={8}>
+<Typography variant="h3" className={classes.h3Contaner}>
          {heroBFContatentAndStyles.HeroBottemFiveLeft.Heading}
           </Typography>
-          </Grid>
-          <Grid item>
-          <Typography variant="body1"  className={classes.bodyContaner}>
+</Grid>
+<Grid item lg={10}>
+<Typography variant="body1"  className={classes.bodyContaner} >
           {heroBFContatentAndStyles.HeroBottemFiveLeft.boby}
           </Typography>
-          </Grid>
-        </Grid>
-         
-      </Grid>
+</Grid>
+   </Grid>
+   <Grid item direction="column"   style={{}} sm={12} lg={6}>
+   <Grid item container justify="flex-start" >
    
-     <Grid item style={{marginLeft:"4em"}}>
-        <Grid container   spacing={6} direction=  {props.matchessmd? "column":"row"}>
-        {heroBFContatentAndStyles.HeroBottemFiveRight.map((content,index) =>(
-         <RightContentBuild content={content} key={`${content.imgName} ${index}`}/>
-        )
+     {heroBFContatentAndStyles.HeroBottemFiveRight.map((content,index) =>( 
+         <Grid item xs={12} sm={4} className={classes.itemContainer}>
+        <Grid container direction="column" justify="center" alignItems="center" >
+        <Grid item style={{paddingTop:"1em"}}>
+        <img src={content.imageUrl} alt="content.imgName" ></img>  
+        </Grid>
+        <Grid item >
+        <Typography variant="subtitle1"  className={classes.subTitleContaner}>
+            {content.totalHelped}
+           </Typography>
+        </Grid>
+        <Grid item >
+        <Typography variant="subtitle2"  >
+          {content.subtitle}
+           </Typography>
+        </Grid>
+             </Grid>
+             </Grid>
+   )
                
-        )}     
-        </Grid>
-      </Grid>
-   
+   )} 
     
 
-    </Grid>
+
+ 
+</Grid>
+
+</Grid>
+   
+ </Grid>
+   
+ 
+
+
+        
+   
+
+    
+
+  
   )
 }

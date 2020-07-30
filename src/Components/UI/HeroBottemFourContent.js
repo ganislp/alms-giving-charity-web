@@ -73,8 +73,8 @@ export const useStyles = makeStyles(theme => ({
      },
   },
   cardh3:{
-marginTop:"1.5em",
-marginBottom:"1.5em",
+marginTop:"1em",
+marginBottom:"1em",
 
 [theme.breakpoints.down("md")]: {
   textAlign:"center",
@@ -95,12 +95,12 @@ marginBottom:"1.5em",
 
 mainh3:{
   fontSize:"2.5em",
-  marginBottom:"1em",
+  paddingBottom:"1em",
   fontWeight:600,
-  paddingBottom:'1em',
   [theme.breakpoints.down("md")]: {
     marginBottom:"0.5em",
-    paddingLeft:"0.5em"
+    paddingLeft:"0.5em",
+    paddingBottom:"0.5em",
    },
 },
 

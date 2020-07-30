@@ -22,7 +22,7 @@ const chevronWidth = 20;
        <span className={classes.spenH1TextUnderLine}>Our</span> Causes
        </Typography>
        </Grid>
-       <Grid item lg={12}  sm={11} xs={11}>
+       <Grid item lg={12}  sm={10} xs={10}>
     <ItemsCarousel
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
