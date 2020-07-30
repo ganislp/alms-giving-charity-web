@@ -6,7 +6,7 @@ export const useStyles = makeStyles(theme => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "35em",
+   // height: "35em",
     width: "100%",
   },
   root: {
@@ -14,37 +14,57 @@ export const useStyles = makeStyles(theme => ({
   },
   paper: {
     width: "100%",
-    height: "35em",
+    //height: "35em",
     backgroundColor:"rgba(0,0,0, 0.85)"
   },
 
 rowContaner:{
-  marginTop:"5em",
+  paddingLeft:"15em",
+  paddingRight:"15em",
+  paddingTop:"5em",
+  paddingBottom:"5em",
+  [theme.breakpoints.down("md")]: {
+    paddingLeft:"1em",
+    paddingRight:"1em",
+    paddingTop:"3em",
+    paddingBottom:"2em",
+  },
  
 },
 h3ContainerMain:{
 ...theme.typography.h3,
-marginBottom:"2em",
-fontSize:"2rem",
+fontSize:"1.5rem",
 fontWeight:600,
+paddingBottom:"2em",
 color: theme.palette.common.white,
+[theme.breakpoints.down("xs")]: {
+  fontSize:"1rem",
+ // paddingBottom:"1em"
+  },
 
+},
+bodyContainer:{
+  ...theme.typography.footerTextColor,
+  fontSize:"1rem",
+  lineHeight:"2em",
+  fontWeight:300,
+  [theme.breakpoints.down("xs")]: {
+    lineHeight:"1.5em",
+
+    },
 },
 h3Container:{
   ...theme.typography.h3,
-  marginBottom:"3.2em",
+  paddingBottom:"2em",
   fontSize:"1.5rem",
   fontWeight:600,
   color: theme.palette.common.white,
+  [theme.breakpoints.down("xs")]: {
+   paddingTop:"2em",
+    paddingBottom:"1em",
+    },
   },
-  bodyContainer:{
-    ...theme.typography.footerTextColor,
-    maxWidth:"15em",
-    textAlign:"left",
-    fontSize:"1rem",
-    lineHeight:"2em",
-    fontWeight:300
-  },
+  
   subtitle1Contaner:{
     ...theme.typography.footerTextColor,
     textAlign:"left",
@@ -60,17 +80,20 @@ iconContainer:{
   marginRight:"0.5em"
 },
 gridItemSpcing:{
-  marginBottom:"2em"
+  marginBottom:"2em",
+  [theme.breakpoints.down("xs")]: {
+    marginBottom:"1em",
+    },
 },
 usefullMargin:{
   marginRight:"10em",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("xs")]: {
     marginRight:"3em",
    },
 },
 leastNewsMargin:{
   marginRight:"8em",
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("xs")]: {
     marginRight:"4em",
    },
 }

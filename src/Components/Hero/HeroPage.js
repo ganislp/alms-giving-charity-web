@@ -7,7 +7,7 @@ import HeroBottemThree from './HeroBottemThree/HeroBottemThree';
 import HeroBottemFour from './HeroBottemFour/HeroBottemFour';
 import HeroFiveBottem from './HeroBottemFive/HeroBottemFive';
 import Footer from '../../Components/Navigation/Header/Footer/Footer';
-import * as heroMainStyles from '../UI/MainHeroStyles';
+
 
 
 export default function HeroPage(props){
@@ -34,6 +34,9 @@ return(
 
 <Grid item>
 <HeroFiveBottem matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
+</Grid>
+<Grid item>
+<Footer matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
 </Grid>
 </Grid> 
 

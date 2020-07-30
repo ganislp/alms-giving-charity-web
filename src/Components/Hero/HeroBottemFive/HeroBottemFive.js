@@ -5,7 +5,7 @@ import * as heroBFContatentAndStyles from '../../UI/HeroBFStyleAndContent';
 export default function HeroFiveBottem(props){
   const classes = heroBFContatentAndStyles.useStyles();
   return(
- <Grid container className={classes.mainContainer} justify={props.matchesxsd ? "center" : "flex-end"} 
+ <Grid container className={classes.mainContainer} justify={props.matchesxsd ? "center" : "flex-start"} 
  alignItems={props.matchesxsd ? "center" : "flex-end"}>
    <Grid item direction="column"   sm={12} lg={5}>
 <Grid item lg={8}>
@@ -19,8 +19,8 @@ export default function HeroFiveBottem(props){
           </Typography>
 </Grid>
    </Grid>
-   <Grid item direction="column"   style={{}} sm={12} lg={6}>
-   <Grid item container justify="flex-start" >
+   <Grid item direction="column"  sm={12} lg={7}>
+   <Grid item container justify="space-between" >
    
      {heroBFContatentAndStyles.HeroBottemFiveRight.map((content,index) =>( 
          <Grid item xs={12} sm={4} className={classes.itemContainer}>

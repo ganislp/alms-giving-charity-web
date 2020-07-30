@@ -22,29 +22,7 @@ export const  useStyles = makeStyles(theme => ({
       marginRight:"1em",
      marginBottom:"1em",
     },
-  //  [theme.breakpoints.down("md")]: {
-  //     margin:"2em",
-  //       },
-    //     [theme.breakpoints.down("md")]: {
-//       marginRight:"1%",
-//         },
-     // paddingLeft:"15em",
-    //  paddingRight:"15em",
-
-//    // marginRight:"2%",
-//     [theme.breakpoints.down("md")]: {
-//       marginRight:"1%",
-//         },
-    
-//     [theme.breakpoints.down("sm")]: {
-//       marginBottom:"1em",
-//       marginRight:"2%",
-//         },
-//  [theme.breakpoints.down("xs")]: {
-//   marginBottom:"1em",
-//   marginRight:"1em",
-//   marginLeft:"1em",
-//     },
+  
 
   },
 

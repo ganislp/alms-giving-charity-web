@@ -18,7 +18,6 @@ export const useStyles = makeStyles(theme => ({
   },
 
   itemContainer:{
-   paddingBottom:"2em",
    paddingTop:"2em"
   },
   h3Contaner:{

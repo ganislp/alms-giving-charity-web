@@ -1,9 +1,11 @@
 import React from 'react'
-import {Grid, Typography} from '@material-ui/core';
+import {Grid, Typography, IconButton} from '@material-ui/core';
 import PhoneIcon from '@material-ui/icons/Phone';
 import * as footerStylesAndContent from '../../../UI/FooterStyleAndContent';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default function Footer(props){
   const classes = footerStylesAndContent.useStyles();
@@ -11,23 +13,35 @@ return(
 
 <Grid  className={classes.background}  container justify="center" >
 <Grid item className={classes.paper} container  justify="center" >     
-      <Grid item container direction="row"    justify="center" className={classes.rowContaner}>
-        <Grid item style={{marginRight:"3em"}}>
+      <Grid item container direction="row"    justify="space-between" className={classes.rowContaner} >
+
+        <Grid item container direction="column" xs={12} sm={6} lg={3} >
+        <Grid item >
           <Typography variant="h3" className={classes.h3ContainerMain}> 
           {footerStylesAndContent.MainFooterHeading.Heading}
           </Typography>
-          <Grid item container direction="column">
-            <Grid item>
+          </Grid>
+            <Grid item >
           <Typography variant="body1" className={classes.bodyContainer}> 
           {footerStylesAndContent.MainFooterHeading.boby}</Typography>
           </Grid>
+          <Grid item >
+         <IconButton >
+         <FacebookIcon fontSize="inherit" color="primary"/>
+         </IconButton>
+         <IconButton >
+         <TwitterIcon fontSize="inherit" color="primary"/>
+         </IconButton>
           </Grid>
         </Grid>
-        <Grid item className={classes.usefullMargin}>
+
+        <Grid item container direction="column" xs={12} sm={6} lg={3}>
+        <Grid item >
         <Typography variant="h3" className={classes.h3Container}> 
         {footerStylesAndContent.FooterUseFullLinks.Heading}
         </Typography>
-        <Grid item container direction="column">
+        </Grid>
+        <Grid item >
          {footerStylesAndContent.FooterUseFullLinks.links.map((link,index) => (
              <Grid item key={`${link.linkName} ${index}`}>
              <Typography variant="subtitle1"
@@ -38,30 +52,40 @@ return(
          ))}
        </Grid>
         </Grid>
-        <Grid item className={classes.leastNewsMargin}>
+
+        <Grid item container direction="column" xs={12} sm={6} lg={3}>
+        <Grid item >
         <Typography variant="h3" className={classes.h3Container}> 
         {footerStylesAndContent.FooterLatestNewsLinks.Heading}
         </Typography>
-        <Grid item container direction="column" >
+        <Grid item >
         {footerStylesAndContent.FooterLatestNewsLinks.links.map((link,index) => (
-            <Grid item className={classes.gridItemSpcing} key={`${link.title} ${index}`}>
+            <Grid item className={classes.gridItemSpcing}  key={`${link.title} ${index}`}>
+                <Grid item >
             <Typography variant="subtitle1"
              className={classes.subtitle1Contaner} > 
             { link.title}
              </Typography>
+             </Grid>
+             <Grid item >
              <Typography variant="subtitle2"
              className={classes.subtitle2Contaner} > 
              { link.subTitle}
              </Typography>
+             </Grid>
             </Grid>
          ))}
            </Grid>
         </Grid>
+        </Grid>
+
+        <Grid item container direction="column" xs={12} sm={6} lg={3}>
         <Grid item >
           <Typography variant="h3" className={classes.h3Container}> 
           {footerStylesAndContent.FooterContact.Heading}
           </Typography>
-          <Grid item container direction="column" >
+          </Grid>
+          <Grid item  >
             <Grid item container>
               <Grid item>
                <PhoneIcon className={classes.iconContainer}/>
@@ -101,9 +125,12 @@ return(
             </Grid>
             </Grid>
           </Grid>
+          </Grid>
+
+        
       </Grid>
        
 </Grid>
-  </Grid>
+ 
 )
 }
