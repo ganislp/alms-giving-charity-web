@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Grid,Hidden, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Grid,Hidden } from '@material-ui/core';
 import Logo from '../Logo/Logo';
 import TabsBuilder from '../AppBar/TabsBuilder/TabsBuilder';
 import DrawerBuilder from '../Drawer/DrawerBuilder';
