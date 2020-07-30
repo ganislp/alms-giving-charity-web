@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid,Typography } from "@material-ui/core";
-import RightContentBuild from './RightContentBuild'
 import * as heroBFContatentAndStyles from '../../UI/HeroBFStyleAndContent';
 
 export default function HeroFiveBottem(props){
