@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography} from '@material-ui/core';
+import { Grid, Typography,Card,CardContent} from '@material-ui/core';
 import { useTheme } from "@material-ui/core/styles";
 import * as aboutUsStylesAndContent from '../UI/PagesStylesAndConst';
 import * as heroBTStylesAndContent from '../UI/HeroBTStylesAndContent';
@@ -56,12 +56,14 @@ export default function AboutUs(props){
   </Grid>
 
   <Grid   item className={classesMain.root} >
-   <Grid container justify="space-between">
+   <Grid container justify="center" spacing={2}>
 
 
   {aboutUsStylesAndContent.aboutUsVoluteers.map((content,index) => (
     
-    <Grid item sm={3} key={`${content} ${index}`} style={{paddingBottom:"2em"}}>
+    <Grid item sm={4} key={`${content} ${index}`} style={{paddingBottom:"2em"}}>
+    <Card>
+    <CardContent>
     <Grid item container direction="column" >
     <Grid item >
     <FormatQuoteIcon color="secondary"/> 
@@ -74,7 +76,7 @@ export default function AboutUs(props){
   </Grid>
   <Grid item container alignItems="center">
   <Grid item >
-  <Avatar alt={content.imageName} src={content.imageUrl} className={classes.large}/>
+  <Avatar alt={content.imageName} src={content.imageUrl} className={classes.large} />
   </Grid>
   <Grid item >
  <Typography variant="caption" className={classes.avatarNameContaner}>
@@ -83,6 +85,9 @@ export default function AboutUs(props){
     </Grid>
   </Grid>
 </Grid>
+</CardContent>
+
+</Card>
 </Grid>
 
   )

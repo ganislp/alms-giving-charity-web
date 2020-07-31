@@ -72,15 +72,15 @@ export const aboutUsUseStyles  = makeStyles(theme => ({
   large: {
     width: theme.spacing(10),
     height: theme.spacing(10),
+    [theme.breakpoints.down("md")]: {
+      paddingBottom:"1em"
+    },
   },
   avatarNameContaner:{
     ...theme.typography.avatarName,
     padding:"1em",
     [theme.breakpoints.down("md")]: {
-      padding:"0.5em"
-     // paddingLeft:"0em",
-     // paddingTop:"1em",
-      // paddingTop:"1em",
+      padding:"1em"
     },
   }
 
