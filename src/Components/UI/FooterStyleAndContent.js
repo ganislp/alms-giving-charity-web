@@ -9,9 +9,9 @@ export const useStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat",
    // height: "35em",
     width: "100%",
-    marginTop:"5em",
+   // marginTop:"5em",
     [theme.breakpoints.down("lg")]: {
-      marginTop:"3em",
+     // marginTop:"3em",
   
      },
   },

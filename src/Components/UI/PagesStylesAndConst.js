@@ -89,14 +89,69 @@ export const aboutUsUseStyles  = makeStyles(theme => ({
     [theme.breakpoints.down("md")]: {
       padding:"0em"
     },
-  }
+  },
 
+  itemContainer:{
+    marginRight:"15em",
+    marginLeft:"15em",
+     [theme.breakpoints.down("md")]: {
+      marginRight:"1em",
+      marginLeft:"1em",
+      marginTop:"3em",
+  
+  }
+},
+helpush1:{
+  ...theme.typography.h2,
+  color:theme.palette.common.white,
+  [theme.breakpoints.down("md")]: {
+    fontSize:"2rem",
+    marginBottom:"0em"
+   } ,
+  [theme.breakpoints.down("xs")]: {
+  fontSize:"2rem",
+  marginBottom:"2em"
+ } ,
+},
+learnButton: {
+  ...theme.typography.learnButton,
+  color:theme.palette.common.white,
+  backgroundColor:theme.palette.common.grey,
+    borderWidth: 1,
+    border:"soild",
+   fontSize: "1.2rem",
+   padding: "1em",
+   marginRight:"1em",
+   "&:hover": {
+    backgroundColor:theme.palette.common.grey,
+   },
+   [theme.breakpoints.down("md")]: {
+    padding: "0.5em",
+ } ,
+  },
+
+  learnButtonSpan:{
+    marginRight: 40, 
+    marginLeft: 40,
+
+    [theme.breakpoints.down("md")]: {
+      marginRight: 20, 
+      marginLeft: 20,
+   } ,
+ 
+    [theme.breakpoints.down("xs")]: {
+      marginRight: 20, 
+      marginLeft: 20,
+   } ,
+ 
+   },
 }))
 
 export const aboutUsBg =  {
   heading:"About Us",
   imageUrl:require('../../assets/Images/AboutUs/about-bg.jpg'),
-imageName:"about-bg"
+imageName:"about-bg",
+subHeading:"Help us so we can help others"
 }
 
 export const aboutUsVoluteers = [

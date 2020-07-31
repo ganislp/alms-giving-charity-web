@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography,Card,CardContent} from '@material-ui/core';
+import { Grid, Typography,Card,CardContent,Button} from '@material-ui/core';
 import { useTheme } from "@material-ui/core/styles";
 import * as aboutUsStylesAndContent from '../UI/PagesStylesAndConst';
 import * as heroBTStylesAndContent from '../UI/HeroBTStylesAndContent';
@@ -97,6 +97,32 @@ export default function AboutUs(props){
 
    </Grid>
     </Grid>
+    <Grid item >
+   <Grid  container alignItems="center" style={{backgroundColor:theme.palette.common.blue,height:"20em"}} justify="center">
+  
+   <Grid container  alignItems="center" justify="space-between" item className={classes.itemContainer}>
+     <Grid item >
+     <Typography variant="h2" className={classes.helpush1}>
+     {aboutUsStylesAndContent.aboutUsBg.subHeading}
+
+     </Typography>
+     </Grid>
+     <Grid item>
+     <Button 
+        // component={Link}// to="/revolution"
+        className={classes.learnButton}
+         variant="outlined"
+         // onClick={() => props.setValue(2)}
+          >
+         <span className={classes.learnButtonSpan}>Donate now</span>                 
+                  </Button>
+     </Grid>
+     </Grid>
+     </Grid>
+   </Grid>
+   
+  
+  
  </Grid>
  
 
