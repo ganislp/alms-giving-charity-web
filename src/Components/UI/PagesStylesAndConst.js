@@ -45,7 +45,7 @@ export const aboutUsUseStyles  = makeStyles(theme => ({
     marginRight:"15em",
     marginLeft:"15em",
     [theme.breakpoints.down("lg")]: {
-      padding:"0em",
+      padding:"1em",
       marginRight:"0em",
       marginLeft:"0em",
       marginTop:"0em",
@@ -73,14 +73,21 @@ export const aboutUsUseStyles  = makeStyles(theme => ({
     width: theme.spacing(10),
     height: theme.spacing(10),
     [theme.breakpoints.down("md")]: {
-      paddingBottom:"1em"
+     // paddingBottom:"1em",
+    //  width: theme.spacing(5),
+   // height: theme.spacing(5),
     },
   },
+  avatarItem:{
+    marginBottom:"1em",
+    marginRight:"1em"
+  },
+
   avatarNameContaner:{
     ...theme.typography.avatarName,
-    padding:"1em",
+
     [theme.breakpoints.down("md")]: {
-      padding:"1em"
+      padding:"0em"
     },
   }
 

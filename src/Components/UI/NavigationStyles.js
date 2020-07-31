@@ -48,7 +48,7 @@ export const useStylesAppBar = makeStyles(theme => ({
   
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "5.7em",
+    marginBottom: "5.6em",
    
     [theme.breakpoints.down("sm")]: {
     marginBottom: "2.4em"

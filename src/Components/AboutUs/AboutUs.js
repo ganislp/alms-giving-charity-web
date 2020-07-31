@@ -75,7 +75,7 @@ export default function AboutUs(props){
 
   </Grid>
   <Grid item container alignItems="center">
-  <Grid item >
+  <Grid item className={classes.avatarItem}>
   <Avatar alt={content.imageName} src={content.imageUrl} className={classes.large} />
   </Grid>
   <Grid item >
