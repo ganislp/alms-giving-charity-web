@@ -43,7 +43,7 @@ export const heroBtStyles = makeStyles(theme => ({
   bodyContaner:{
   maxWidth:"45em",
     fontSize:"1rem",
-   color:"#b7b7b7",
+   color:theme.palette.common.lightGrey,
     lineHeight: 2,
     paddingBottom:"5em",
     paddingRight:"2em",

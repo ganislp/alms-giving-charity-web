@@ -4,17 +4,21 @@ import {createMuiTheme } from '@material-ui/core/styles';
 const appWhite="#ffff";
 const appBlue= "#0B72B9";
  const arcGrey = "#333";
- const footerTextColour="#929191"
+ const footerTextColour="#929191";
+ const lightGrey="#b7b7b7";
+ const darkGrey = "#595858"
 //'Montserrat', sans-serif;
 export default  createMuiTheme({
   
 palette:{
   common : {
     white : appWhite,
-    blue:appBlue
+    blue:appBlue,
+    grey : arcGrey,
+    lightGrey: lightGrey
   },
   primary: {
-    main : appWhite
+    main : appWhite,
   },
   secondary :{
   main : appBlue
@@ -52,7 +56,20 @@ typography:{
     fontWeight: 600,
     color: appWhite,
   },
-
+ subtitle1Contaner: {
+    fontFamily: "Raleway",
+    fontSize: "2rem",
+    fontWeight: 600,
+    color: arcGrey,
+   
+  },
+  avatarName:{
+    fontFamily: "Raleway",
+    fontSize: "1rem",
+    color: darkGrey,
+    fontWeight: 600,
+ 
+  },
   body1: {
     fontSize: "1.25rem",
     color: appWhite,

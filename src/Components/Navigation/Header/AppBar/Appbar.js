@@ -42,11 +42,6 @@ export default function Appbar(props) {
         </Grid>
 
       </Grid>
-     
-    
-   
-       
-
       </AppBar>
       <div className={classes.toolbarMargin} />
  

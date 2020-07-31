@@ -6,7 +6,7 @@ import HeroBottemTwo from './HeroBottemTwo/HeroBouttomTwo';
 import HeroBottemThree from './HeroBottemThree/HeroBottemThree';
 import HeroBottemFour from './HeroBottemFour/HeroBottemFour';
 import HeroFiveBottem from './HeroBottemFive/HeroBottemFive';
-import Footer from '../../Components/Navigation/Header/Footer/Footer';
+
 
 
 
@@ -35,9 +35,7 @@ return(
 <Grid item>
 <HeroFiveBottem matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
 </Grid>
-<Grid item>
-<Footer matchessmd={props.matchessmd} matchesMdd={props.matchesMdd} matchesxsd={props.matchesxsd}/>
-</Grid>
+
 </Grid> 
 
   

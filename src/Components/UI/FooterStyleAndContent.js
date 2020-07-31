@@ -1,6 +1,7 @@
 import {makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles(theme => ({
+
   background: {
     backgroundImage: `url(${FooterBackround.imageUrl})`,
     backgroundPosition: "center",
@@ -8,6 +9,11 @@ export const useStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat",
    // height: "35em",
     width: "100%",
+    marginTop:"5em",
+    [theme.breakpoints.down("lg")]: {
+      marginTop:"3em",
+  
+     },
   },
   root: {
     flexGrow: 1
