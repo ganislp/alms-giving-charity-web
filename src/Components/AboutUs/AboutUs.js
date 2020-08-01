@@ -19,8 +19,8 @@ export default function AboutUs(props){
 
   <Grid container justify="flex-start" direction="column">
 <Grid item className={classes.background} container alignItems="center" >
-<Grid item className={classes.paper} container alignItems="center">
-  <Grid item className={classes.mainHeader}> 
+<Grid item className={classesMain.paper} container alignItems="center">
+  <Grid item className={classesMain.mainHeader}> 
 <Typography variant="h1" style={{   fontSize:"3rem",}}>
 {aboutUsStylesAndContent.aboutUsBg.heading}
   </Typography>

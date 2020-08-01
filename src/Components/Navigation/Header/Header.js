@@ -6,7 +6,7 @@ import Appbar from './AppBar/Appbar';
 import HeroPage from '../../Hero/HeroPage';
 import AboutUs from '../../AboutUs/AboutUs'
 import Footer from '../Header/Footer/Footer';
-
+import ContactUs from '../../ContactUs/ContactUs'
 
 
 export default function Header(){
@@ -47,7 +47,11 @@ const matchesXSD = useMediaQuery(theme.breakpoints.down("xs"));
     <Route exact path="/causes" component={() => <div>Causes</div>}></Route>
     <Route exact path="/callery" component={() => <div>Gallery</div>}></Route>
     <Route exact path="/news" component={() => <div>News</div>}></Route>
-    <Route exact path="/contact" component={() => <div>Contact</div>}></Route>
+    <Route exact path="/contact" render={props => (<ContactUs {...props} 
+    matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
+            )}></Route>
+
+
     </Switch>
     <Footer matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
     </BrowserRouter>

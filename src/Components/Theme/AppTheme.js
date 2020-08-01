@@ -6,7 +6,8 @@ const appBlue= "#0B72B9";
  const arcGrey = "#333";
  const footerTextColour="#929191";
  const lightGrey="#b7b7b7";
- const darkGrey = "#595858"
+ const darkGrey = "#595858";
+ const bgColour = '#edf3f5'
 //'Montserrat', sans-serif;
 export default  createMuiTheme({
   
@@ -15,7 +16,8 @@ palette:{
     white : appWhite,
     blue:appBlue,
     grey : arcGrey,
-    lightGrey: lightGrey
+    lightGrey: lightGrey,
+    bgColour:bgColour
   },
   primary: {
     main : appWhite,
@@ -37,6 +39,15 @@ typography:{
     fontWeight: 700,
     fontSize: "7rem",
     color: appWhite,
+    lineHeight: 1,
+  
+  },
+
+  h2:{
+    fontFamily: "Raleway",
+    fontWeight: 600,
+    fontSize: "1.5rem",
+    color: arcGrey,
     lineHeight: 1,
   
   },
@@ -74,6 +85,11 @@ typography:{
     fontSize: "1.25rem",
     color: appWhite,
     fontWeight: 300
+  },
+  body2: {
+    fontSize: "1rem",
+    color: lightGrey,
+    lineHeight: 2,
   },
   cardbody1: {
     fontSize: "1rem",
@@ -121,6 +137,29 @@ overrides: {
    MuiAppBar: {
     root: {paddingRight: 0, }
 
+   },
+   MuiInputLabel:{
+     root:{
+      color:arcGrey,
+      fontSize:"1rem",
+      fontWeight:300
+     }
+    
+   },
+   MuiInput:{
+     root:{
+      color:arcGrey,
+      fontWeight:300,
+     },
+    underline:{
+      "&:before":{
+        borderBottem:`2px solid ${arcGrey}`
+      },
+      "&:hover:not($disabled):not($focused):not($error):before":{
+        borderBottem:`2px solid ${arcGrey}`
+      }
+    }
    }
+
 } 
 });

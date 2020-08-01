@@ -100,7 +100,7 @@ export const useStylesFeaturedCause = makeStyles(theme => ({
   paper: {
     height: "35em",
     width: "100%",
-    backgroundColor:"#edf3f5",   
+    backgroundColor: theme.palette.common.bgColour,    
   },
 
   rowContaner:{

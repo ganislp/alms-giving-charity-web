@@ -6,28 +6,39 @@ export const mainContainer = makeStyles(theme => ({
     marginLeft:"15em",
     marginTop:"5em",
      [theme.breakpoints.down("lg")]: {
-      marginRight:"1em",
+     marginRight:"1em",
       marginLeft:"1em",
       marginTop:"3em",
   
      },
     },
+    paper: {
+      backgroundColor:"rgba(0, 0, 0, 0.8)", 
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+       height:"15em",
+       width:"100%",
+       [theme.breakpoints.down("md")]: {
+        height:"8em",
+       },
+      },
+      mainHeader:{
+        marginRight:"15em",
+        marginLeft:"15em",
+        [theme.breakpoints.down("lg")]: {
+          padding:"1em",
+          marginRight:"0em",
+          marginLeft:"0em",
+          marginTop:"0em",
+         },
+      },
 }));
 
 export const aboutUsUseStyles  = makeStyles(theme => ({
-  paper: {
-    backgroundColor:"rgba(0, 0, 0, 0.5)", 
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
-     height:"20em",
-     width:"100%",
-     [theme.breakpoints.down("md")]: {
-      height:"8em",
-     },
-    },
-  
+ 
+ 
 
   background: {
     backgroundImage: `url(${aboutUsBg.imageUrl})`,
@@ -35,22 +46,13 @@ export const aboutUsUseStyles  = makeStyles(theme => ({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     width:"100%",
-    height:"20em",
+    height:"15em",
     [theme.breakpoints.down("md")]: {
       height:"8em",
      },
   },
 
-  mainHeader:{
-    marginRight:"15em",
-    marginLeft:"15em",
-    [theme.breakpoints.down("lg")]: {
-      padding:"1em",
-      marginRight:"0em",
-      marginLeft:"0em",
-      marginTop:"0em",
-     },
-  },
+
 
   img: {
     backgroundSize: "cover",
@@ -178,3 +180,84 @@ export const aboutUsVoluteers = [
   }
 ];
 
+export const contactUsUseStyles  = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+   //height: "29em",
+    width: "100%",
+    backgroundColor:theme.palette.common.bgColour,   
+  },
+  background: {
+    backgroundImage: `url(${contactUsContent.imageUrl})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    width:"100%",
+    height:"15em",
+    [theme.breakpoints.down("md")]: {
+      height:"8em",
+     },
+  },
+  iconContainer:{
+    marginRight:"0.5em"
+  },
+  subtitle1Contaner:{
+    marginBottom:"1em",
+  },
+  itemContainer:{
+    marginBottom:"1em",
+  },
+  messageContaner:{
+    border:`1px solid ${theme.palette.common.grey}`,
+    marginTop:"2em",
+    marginBottom:"1em",
+    borderRadius:5,
+    [theme.breakpoints.down("md")]: {
+      marginTop:"1em",
+    marginBottom:"1em",
+     },
+  },
+  itemTextField:{
+    marginBottom:"1em",
+    [theme.breakpoints.down("md")]: {
+      marginBottom:"0.5em",
+
+     },
+  },
+
+  textFieldContaner:{
+    // height: "29em",
+    width: "100%",
+    backgroundColor:theme.palette.common.bgColour, 
+    paddingLeft:"3em",
+    paddingRight:"3em",
+    paddingTop:"1em",
+    [theme.breakpoints.down("md")]: {
+      paddingLeft:"1em",
+    paddingRight:"1em",
+    paddingTop:"1em",
+     },
+  },
+
+  btn:{
+
+  },
+  addressContainer:{
+   // marginBottom:"1em",
+    [theme.breakpoints.down("md")]: {
+      marginBottom:"1em",
+
+     },
+  },
+
+}))
+
+export const contactUsContent =  {
+  heading:"Contact",
+  subHeading:"Get In touch with us",
+  body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.",
+  imageUrl:require('../../assets/Images/ContactUs/contact-bg.jpg'),
+imageName:"contact-bg"
+}
