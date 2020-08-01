@@ -6,7 +6,8 @@ import Appbar from './AppBar/Appbar';
 import HeroPage from '../../Hero/HeroPage';
 import AboutUs from '../../AboutUs/AboutUs'
 import Footer from '../Header/Footer/Footer';
-import ContactUs from '../../ContactUs/ContactUs'
+import ContactUs from '../../ContactUs/ContactUs';
+import Gallery from '../../Gallery/Gallery';
 
 
 export default function Header(){
@@ -45,8 +46,13 @@ const matchesXSD = useMediaQuery(theme.breakpoints.down("xs"));
     matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
             )}></Route>
     <Route exact path="/causes" component={() => <div>Causes</div>}></Route>
-    <Route exact path="/callery" component={() => <div>Gallery</div>}></Route>
+    
+    <Route exact path="/gallery" render={props => (<Gallery {...props} 
+    matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
+            )}></Route>
+
     <Route exact path="/news" component={() => <div>News</div>}></Route>
+
     <Route exact path="/contact" render={props => (<ContactUs {...props} 
     matchessmd={matchesSMD} matchesMdd={matchesMD} matchesxsd={matchesXSD}/>
             )}></Route>

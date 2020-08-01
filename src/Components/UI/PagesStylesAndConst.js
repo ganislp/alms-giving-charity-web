@@ -1,10 +1,10 @@
 import {makeStyles} from '@material-ui/core/styles';
-
+// --------------------------------Start About us-----------------------------------------------
 export const mainContainer = makeStyles(theme => ({
   root: {
     marginRight:"15em",
     marginLeft:"15em",
-    marginTop:"5em",
+    marginTop:"3em",
      [theme.breakpoints.down("lg")]: {
      marginRight:"1em",
       marginLeft:"1em",
@@ -179,7 +179,7 @@ export const aboutUsVoluteers = [
   imageName:"Voluteer"
   }
 ];
-
+// --------------------------------Start Contact us-----------------------------------------------
 export const contactUsUseStyles  = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -261,3 +261,94 @@ export const contactUsContent =  {
   imageUrl:require('../../assets/Images/ContactUs/contact-bg.jpg'),
 imageName:"contact-bg"
 }
+
+// --------------------------------Start Gallery-----------------------------------------------
+export const galleryUseStyles  = makeStyles(theme => ({
+  
+  background: {
+    backgroundImage: `url(${galleryContent.imageUrl})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    width:"100%",
+    height:"15em",
+    [theme.breakpoints.down("md")]: {
+      height:"8em",
+     },
+  },
+
+}))
+
+export const galleryContent =  {
+  heading:"Portfolio",
+  imageUrl:require('../../assets/Images/Portfolio/portfolio-bg.jpg'),
+imageName:"portfolio-bg"
+}
+
+
+export const galleryImages = [
+  {
+    src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+    thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 213,
+    caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+    thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+  src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+  thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+  thumbnailWidth: 320,
+  thumbnailHeight: 213,
+  caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+  thumbnailCaption: "Flower Interior Macro"
+},
+{
+    src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
+    thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
+    thumbnailWidth: 320,
+    thumbnailHeight: 213,
+    caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)",
+    thumbnailCaption: "Flower Interior Macro"
+}
+]
