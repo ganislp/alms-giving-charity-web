@@ -1,19 +1,11 @@
-import React,{useState} from "react";
-import { Grid, Typography,Paper,Button,Hidden,Dialog,DialogContent } from "@material-ui/core";
+import React from "react";
+import { Grid, Typography,Paper,Button,Hidden} from "@material-ui/core";
 import * as HeroTopConst from '../../../UI/NavigationStyles';
-import Login from '../../../Model/Login'
+
 
 export default function HeroTopHeader(props){
   const classes = HeroTopConst.useStyles();
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+ 
 
 
  
