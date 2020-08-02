@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from './Components/Layout/Layout';
+import Layout from './components/Layout/Layout';
 import { ThemeProvider} from '@material-ui/core/styles';
-import appTheme from './Components/Theme/AppTheme'
+import appTheme from './components/Theme/AppTheme'
 
 
 function App() {

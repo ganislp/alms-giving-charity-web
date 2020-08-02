@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Hidden } from "@material-ui/core";
 import * as heroContatentAndStyles from '../../UI/HeroContantAndStyles';
-import ButtonComp from '../../UI/Button/ButtonComp'
+import ButtonComp from '../../UI/Button/ButtonComp';
+import HeroMainSettings from '../../Model/HeroMainSettings'
 export default function OverlayBackroundImage(props) {
   const classes = heroContatentAndStyles.heroTopStyles();
 
@@ -70,6 +71,7 @@ export default function OverlayBackroundImage(props) {
             </Grid>
           </Grid>
         </Grid>
+        <HeroMainSettings />
       </Grid>
     </Grid>
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import React from 'react'
+import Grid from "@material-ui/core/Grid";
 import UpvomingEventsBuild from './UpcomingEvents/UpvomingEventsBuild';
 import FeaturedCause from './FeaturedCause/FeaturedCause';
 import * as heroContatentAndStyles from '../../UI/HeroBottemThreeConst';

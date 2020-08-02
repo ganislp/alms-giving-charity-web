@@ -140,7 +140,7 @@ overrides: {
    },
    MuiInputLabel:{
      root:{
-      color:arcGrey,
+      color:appBlue,
       fontSize:"1rem",
       fontWeight:300
      }
@@ -148,15 +148,15 @@ overrides: {
    },
    MuiInput:{
      root:{
-      color:arcGrey,
+      color:appBlue,
       fontWeight:300,
      },
     underline:{
       "&:before":{
-        borderBottem:`2px solid ${arcGrey}`
+        borderBottem:`2px solid ${appBlue}`
       },
       "&:hover:not($disabled):not($focused):not($error):before":{
-        borderBottem:`2px solid ${arcGrey}`
+        borderBottem:`2px solid ${appBlue}`
       }
     }
    }
